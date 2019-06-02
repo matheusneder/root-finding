@@ -1,0 +1,180 @@
+\hypertarget{structRootFindingBissecao}{
+\subsection{RootFindingBissecao Struct Reference}
+\label{structRootFindingBissecao}\index{RootFindingBissecao@{RootFindingBissecao}}
+}
+Estrutura de dados para o Metodo da Bissecao.  
+
+
+{\tt \#include $<$RootFindingBissecao.h$>$}
+
+\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \par
+\hyperlink{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771aedb8bebcaa12b3fa68c61c6542dde16c}{BISSECAO\_\-NOT\_\-INIT} =  0, 
+\hyperlink{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a35d026d6918775414ccaca5903d002d2}{BISSECAO\_\-INITIALIZED}, 
+\hyperlink{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a00de73525857a692407d8b665a4084e8}{BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}, 
+\hyperlink{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a470d5787e5a15f2cd06b04df953a14ec}{BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}, 
+\par
+\hyperlink{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771aa5348a95f1e272a1a422d9ec87c62549}{BISSECAO\_\-ERROR\_\-FOUND}
+ \}
+\begin{CompactList}\small\item\em Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____bissecao_g2ab4fb7daf5901001d011ee85dc4cfe0}{RootFindingBissecaoGetStateCode} e \hyperlink{group____bissecao_gb0455a1f4f30b2e8916d9dff5c237be1}{RootFindingBissecaoGetStateMessage}. \item\end{CompactList}\item 
+enum \{ \hyperlink{structRootFindingBissecao_6a58c7139b830307aaf62ffa2e9175d99e3115571687e8ab7da7a5553becb6ec}{BISSECAO\_\-NO\_\-ERROR} =  0, 
+\hyperlink{structRootFindingBissecao_6a58c7139b830307aaf62ffa2e9175d9d6103abe4afb484b65910b31e7f537c2}{BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}
+ \}
+\begin{CompactList}\small\item\em Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____bissecao_g9672d1ca4387db1792f8219968118900}{RootFindingBissecaoGetErrorCode} e \hyperlink{group____bissecao_g77e94d3a9b5999461aabeca3bfe1837a}{RootFindingBissecaoGetErrorMessage}. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+unsigned \hyperlink{structRootFindingBissecao_d6eeba6745ed7dc5d390846473c9b817}{i}
+\item 
+\hyperlink{structRootFindingBase}{RootFindingBaseT} $\ast$ \hyperlink{structRootFindingBissecao_5041e5b19cdb436273b9d11557aa8c63}{rootsObj}
+\item 
+unsigned \hyperlink{structRootFindingBissecao_06b978677910f6ff08dd4a521aba0c83}{maxIterations}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingBissecao_94385d4daec400300058b676fa1637a6}{tolerance}
+\item 
+enum RootFindingBissecao:: \{ ... \}  \hyperlink{structRootFindingBissecao_313716e085ac144a01b911d1e2666cd0}{state}
+\begin{CompactList}\small\item\em Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____bissecao_g2ab4fb7daf5901001d011ee85dc4cfe0}{RootFindingBissecaoGetStateCode} e \hyperlink{group____bissecao_gb0455a1f4f30b2e8916d9dff5c237be1}{RootFindingBissecaoGetStateMessage}. \item\end{CompactList}\item 
+enum RootFindingBissecao:: \{ ... \}  \hyperlink{structRootFindingBissecao_a184500b7a23507c3ea2e270e455a4c0}{errorCode}
+\begin{CompactList}\small\item\em Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____bissecao_g9672d1ca4387db1792f8219968118900}{RootFindingBissecaoGetErrorCode} e \hyperlink{group____bissecao_g77e94d3a9b5999461aabeca3bfe1837a}{RootFindingBissecaoGetErrorMessage}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Detailed Description}
+Estrutura de dados para o Metodo da Bissecao. 
+
+Definition at line 42 of file RootFindingBissecao.h.
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a}{
+\paragraph["@2]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a}
+
+
+Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____bissecao_g2ab4fb7daf5901001d011ee85dc4cfe0}{RootFindingBissecaoGetStateCode} e \hyperlink{group____bissecao_gb0455a1f4f30b2e8916d9dff5c237be1}{RootFindingBissecaoGetStateMessage}. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{BISSECAO\_\-NOT\_\-INIT@{BISSECAO\_\-NOT\_\-INIT}!RootFindingBissecao@{RootFindingBissecao}}\index{RootFindingBissecao@{RootFindingBissecao}!BISSECAO\_\-NOT\_\-INIT@{BISSECAO\_\-NOT\_\-INIT}}\item[{\em 
+\hypertarget{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771aedb8bebcaa12b3fa68c61c6542dde16c}{
+BISSECAO\_\-NOT\_\-INIT}
+\label{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771aedb8bebcaa12b3fa68c61c6542dde16c}
+}]\index{BISSECAO\_\-INITIALIZED@{BISSECAO\_\-INITIALIZED}!RootFindingBissecao@{RootFindingBissecao}}\index{RootFindingBissecao@{RootFindingBissecao}!BISSECAO\_\-INITIALIZED@{BISSECAO\_\-INITIALIZED}}\item[{\em 
+\hypertarget{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a35d026d6918775414ccaca5903d002d2}{
+BISSECAO\_\-INITIALIZED}
+\label{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a35d026d6918775414ccaca5903d002d2}
+}]\index{BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}!RootFindingBissecao@{RootFindingBissecao}}\index{RootFindingBissecao@{RootFindingBissecao}!BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}}\item[{\em 
+\hypertarget{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a00de73525857a692407d8b665a4084e8}{
+BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}
+\label{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a00de73525857a692407d8b665a4084e8}
+}]\index{BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}!RootFindingBissecao@{RootFindingBissecao}}\index{RootFindingBissecao@{RootFindingBissecao}!BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}}\item[{\em 
+\hypertarget{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a470d5787e5a15f2cd06b04df953a14ec}{
+BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}
+\label{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771a470d5787e5a15f2cd06b04df953a14ec}
+}]\index{BISSECAO\_\-ERROR\_\-FOUND@{BISSECAO\_\-ERROR\_\-FOUND}!RootFindingBissecao@{RootFindingBissecao}}\index{RootFindingBissecao@{RootFindingBissecao}!BISSECAO\_\-ERROR\_\-FOUND@{BISSECAO\_\-ERROR\_\-FOUND}}\item[{\em 
+\hypertarget{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771aa5348a95f1e272a1a422d9ec87c62549}{
+BISSECAO\_\-ERROR\_\-FOUND}
+\label{structRootFindingBissecao_4761213e1c4bcef4e874343a7b8d771aa5348a95f1e272a1a422d9ec87c62549}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 53 of file RootFindingBissecao.h.\hypertarget{structRootFindingBissecao_6a58c7139b830307aaf62ffa2e9175d9}{
+\paragraph["@3]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{structRootFindingBissecao_6a58c7139b830307aaf62ffa2e9175d9}
+
+
+Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____bissecao_g9672d1ca4387db1792f8219968118900}{RootFindingBissecaoGetErrorCode} e \hyperlink{group____bissecao_g77e94d3a9b5999461aabeca3bfe1837a}{RootFindingBissecaoGetErrorMessage}. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{BISSECAO\_\-NO\_\-ERROR@{BISSECAO\_\-NO\_\-ERROR}!RootFindingBissecao@{RootFindingBissecao}}\index{RootFindingBissecao@{RootFindingBissecao}!BISSECAO\_\-NO\_\-ERROR@{BISSECAO\_\-NO\_\-ERROR}}\item[{\em 
+\hypertarget{structRootFindingBissecao_6a58c7139b830307aaf62ffa2e9175d99e3115571687e8ab7da7a5553becb6ec}{
+BISSECAO\_\-NO\_\-ERROR}
+\label{structRootFindingBissecao_6a58c7139b830307aaf62ffa2e9175d99e3115571687e8ab7da7a5553becb6ec}
+}]\index{BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}!RootFindingBissecao@{RootFindingBissecao}}\index{RootFindingBissecao@{RootFindingBissecao}!BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}}\item[{\em 
+\hypertarget{structRootFindingBissecao_6a58c7139b830307aaf62ffa2e9175d9d6103abe4afb484b65910b31e7f537c2}{
+BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}
+\label{structRootFindingBissecao_6a58c7139b830307aaf62ffa2e9175d9d6103abe4afb484b65910b31e7f537c2}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 67 of file RootFindingBissecao.h.
+
+\subsubsection{Field Documentation}
+\hypertarget{structRootFindingBissecao_d6eeba6745ed7dc5d390846473c9b817}{
+\index{RootFindingBissecao@{RootFindingBissecao}!i@{i}}
+\index{i@{i}!RootFindingBissecao@{RootFindingBissecao}}
+\paragraph[i]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf RootFindingBissecao::i}}\hfill}
+\label{structRootFindingBissecao_d6eeba6745ed7dc5d390846473c9b817}
+
+
+
+
+Definition at line 44 of file RootFindingBissecao.h.
+
+Referenced by RootFindingBissecaoInit(), and RootFindingBissecaoPerformIteration().\hypertarget{structRootFindingBissecao_5041e5b19cdb436273b9d11557aa8c63}{
+\index{RootFindingBissecao@{RootFindingBissecao}!rootsObj@{rootsObj}}
+\index{rootsObj@{rootsObj}!RootFindingBissecao@{RootFindingBissecao}}
+\paragraph[rootsObj]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBaseT}$\ast$ {\bf RootFindingBissecao::rootsObj}}\hfill}
+\label{structRootFindingBissecao_5041e5b19cdb436273b9d11557aa8c63}
+
+
+
+
+Definition at line 45 of file RootFindingBissecao.h.
+
+Referenced by computeX(), RootFindingBissecaoCreate(), RootFindingBissecaoGetStateMessage(), RootFindingBissecaoInit(), and RootFindingBissecaoPerformIteration().\hypertarget{structRootFindingBissecao_06b978677910f6ff08dd4a521aba0c83}{
+\index{RootFindingBissecao@{RootFindingBissecao}!maxIterations@{maxIterations}}
+\index{maxIterations@{maxIterations}!RootFindingBissecao@{RootFindingBissecao}}
+\paragraph[maxIterations]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf RootFindingBissecao::maxIterations}}\hfill}
+\label{structRootFindingBissecao_06b978677910f6ff08dd4a521aba0c83}
+
+
+
+
+Definition at line 46 of file RootFindingBissecao.h.
+
+Referenced by RootFindingBissecaoCreate(), RootFindingBissecaoGetStateMessage(), and RootFindingBissecaoPerformIteration().\hypertarget{structRootFindingBissecao_94385d4daec400300058b676fa1637a6}{
+\index{RootFindingBissecao@{RootFindingBissecao}!tolerance@{tolerance}}
+\index{tolerance@{tolerance}!RootFindingBissecao@{RootFindingBissecao}}
+\paragraph[tolerance]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingBissecao::tolerance}}\hfill}
+\label{structRootFindingBissecao_94385d4daec400300058b676fa1637a6}
+
+
+
+
+Definition at line 47 of file RootFindingBissecao.h.
+
+Referenced by RootFindingBissecaoCreate(), RootFindingBissecaoGetStateMessage(), and RootFindingBissecaoPerformIteration().\hypertarget{structRootFindingBissecao_313716e085ac144a01b911d1e2666cd0}{
+\index{RootFindingBissecao@{RootFindingBissecao}!state@{state}}
+\index{state@{state}!RootFindingBissecao@{RootFindingBissecao}}
+\paragraph[state]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   {\bf RootFindingBissecao::state}}\hfill}
+\label{structRootFindingBissecao_313716e085ac144a01b911d1e2666cd0}
+
+
+Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____bissecao_g2ab4fb7daf5901001d011ee85dc4cfe0}{RootFindingBissecaoGetStateCode} e \hyperlink{group____bissecao_gb0455a1f4f30b2e8916d9dff5c237be1}{RootFindingBissecaoGetStateMessage}. 
+
+
+
+Referenced by resetError(), RootFindingBissecaoCreate(), RootFindingBissecaoGetStateCode(), RootFindingBissecaoGetStateMessage(), RootFindingBissecaoInit(), RootFindingBissecaoPerformIteration(), and setError().\hypertarget{structRootFindingBissecao_a184500b7a23507c3ea2e270e455a4c0}{
+\index{RootFindingBissecao@{RootFindingBissecao}!errorCode@{errorCode}}
+\index{errorCode@{errorCode}!RootFindingBissecao@{RootFindingBissecao}}
+\paragraph[errorCode]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   {\bf RootFindingBissecao::errorCode}}\hfill}
+\label{structRootFindingBissecao_a184500b7a23507c3ea2e270e455a4c0}
+
+
+Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____bissecao_g9672d1ca4387db1792f8219968118900}{RootFindingBissecaoGetErrorCode} e \hyperlink{group____bissecao_g77e94d3a9b5999461aabeca3bfe1837a}{RootFindingBissecaoGetErrorMessage}. 
+
+
+
+Referenced by resetError(), RootFindingBissecaoGetErrorCode(), RootFindingBissecaoGetErrorMessage(), RootFindingBissecaoHasError(), and setError().
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/\hyperlink{RootFindingBissecao_8h}{RootFindingBissecao.h}\end{CompactItemize}

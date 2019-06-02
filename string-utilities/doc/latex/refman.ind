@@ -1,0 +1,16 @@
+\begin{theindex}
+
+  \item {include/StringUtilities.h}, \hyperpage{1}
+
+  \indexspace
+
+  \item {src/StringUtilities.c}, \hyperpage{1}
+  \item {StringAbbreviate}
+    \subitem {StringUtilities.c}, \hyperpage{2}
+    \subitem {StringUtilities.h}, \hyperpage{1}
+  \item {StringUtilities.c}
+    \subitem {StringAbbreviate}, \hyperpage{2}
+  \item {StringUtilities.h}
+    \subitem {StringAbbreviate}, \hyperpage{1}
+
+\end{theindex}
