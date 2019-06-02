@@ -1,6 +1,10 @@
 # Root finding
 
-Root finding of mathematical functions using numerical calculus algorithms writed in C language (C ISO/IEC 9899:1990):
+Root finding of mathematical functions using numerical calculus algorithms writed in C language (C ISO/IEC 9899:1990). I wrote this project while studying numerical calculus on university. 
+
+**This code should be useful to perform root finding in limited hardware such micro-controllers.**
+
+Available algorithms:
 
 - [Newton Rhapson](root-finding/src/RootFindingNewtonRhapson.c)
 - [Cordas](root-finding/src/RootFindingCordas.c)
