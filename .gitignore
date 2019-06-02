@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Package Files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
