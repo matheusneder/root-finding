@@ -1,0 +1,211 @@
+\hypertarget{structRootFindingCordas}{
+\subsection{RootFindingCordas Struct Reference}
+\label{structRootFindingCordas}\index{RootFindingCordas@{RootFindingCordas}}
+}
+Estrutura de dados para o Metodo das Cordas.  
+
+
+{\tt \#include $<$RootFindingCordas.h$>$}
+
+\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \par
+\hyperlink{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b18c54532f66ed8582432a3ac138983a92}{CORDAS\_\-NOT\_\-INIT} =  0, 
+\hyperlink{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b1354fe30a9952fd05ac392afb7e13c3d0}{CORDAS\_\-INITIALIZED}, 
+\hyperlink{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b161cf70c0991908a217b308e24a87e14d}{CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}, 
+\hyperlink{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b1753f6f226e66a88d3b6413815c679752}{CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}, 
+\par
+\hyperlink{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b109d02da81d1e39d383d6e26a97c4c3b6}{CORDAS\_\-ERROR\_\-FOUND}
+ \}
+\begin{CompactList}\small\item\em Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____cordas_g67aaf428f922e7d15a7fbd5a4508ffd7}{RootFindingCordasGetStateCode} e \hyperlink{group____cordas_ga065f13f2ec77b2e949190c1aca9ef9d}{RootFindingCordasGetStateMessage}. \item\end{CompactList}\item 
+enum \{ \hyperlink{structRootFindingCordas_d8ce691fb5c074038507880fdc6671813fa9461c017fe10d1f23204342e55084}{CORDAS\_\-NO\_\-ERROR} =  0, 
+\hyperlink{structRootFindingCordas_d8ce691fb5c074038507880fdc6671816e75094d3e9cb381b6d45aaeb579453c}{CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR}, 
+\hyperlink{structRootFindingCordas_d8ce691fb5c074038507880fdc6671810e6bdbf35dd606ee214c808ddc9f4c50}{CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}
+ \}
+\begin{CompactList}\small\item\em Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____cordas_gcc4b8454f6664e389c484498f42c17d8}{RootFindingCordasGetErrorCode} e \hyperlink{group____cordas_g5a6750a998093e1701c8a01ae24e9cc2}{RootFindingCordasGetErrorMessage}. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+unsigned \hyperlink{structRootFindingCordas_9715b440ec8443bdfda3ac2d7b388d14}{i}
+\item 
+\hyperlink{structRootFindingBase}{RootFindingBaseT} $\ast$ \hyperlink{structRootFindingCordas_1bb5c50ec0b0e10e0bec0f8eda8df978}{rootsObj}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingCordas_b7ab045a5074411ab780f33d934de627}{c}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingCordas_36d104146b164a3da07f9d3f60a04506}{fC}
+\item 
+unsigned \hyperlink{structRootFindingCordas_1823f4e1787202f918fdd00f95792d1f}{maxIterations}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingCordas_692d6a123f5a6e5d42081bee02560f45}{tolerance}
+\item 
+enum RootFindingCordas:: \{ ... \}  \hyperlink{structRootFindingCordas_1cf4fb48b5b925ba6ff392679e98ffec}{state}
+\begin{CompactList}\small\item\em Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____cordas_g67aaf428f922e7d15a7fbd5a4508ffd7}{RootFindingCordasGetStateCode} e \hyperlink{group____cordas_ga065f13f2ec77b2e949190c1aca9ef9d}{RootFindingCordasGetStateMessage}. \item\end{CompactList}\item 
+enum RootFindingCordas:: \{ ... \}  \hyperlink{structRootFindingCordas_237764d1db5221c0fb51189ae84b626a}{errorCode}
+\begin{CompactList}\small\item\em Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____cordas_gcc4b8454f6664e389c484498f42c17d8}{RootFindingCordasGetErrorCode} e \hyperlink{group____cordas_g5a6750a998093e1701c8a01ae24e9cc2}{RootFindingCordasGetErrorMessage}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Detailed Description}
+Estrutura de dados para o Metodo das Cordas. 
+
+Definition at line 44 of file RootFindingCordas.h.
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b1}{
+\paragraph["@4]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b1}
+
+
+Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____cordas_g67aaf428f922e7d15a7fbd5a4508ffd7}{RootFindingCordasGetStateCode} e \hyperlink{group____cordas_ga065f13f2ec77b2e949190c1aca9ef9d}{RootFindingCordasGetStateMessage}. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CORDAS\_\-NOT\_\-INIT@{CORDAS\_\-NOT\_\-INIT}!RootFindingCordas@{RootFindingCordas}}\index{RootFindingCordas@{RootFindingCordas}!CORDAS\_\-NOT\_\-INIT@{CORDAS\_\-NOT\_\-INIT}}\item[{\em 
+\hypertarget{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b18c54532f66ed8582432a3ac138983a92}{
+CORDAS\_\-NOT\_\-INIT}
+\label{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b18c54532f66ed8582432a3ac138983a92}
+}]\index{CORDAS\_\-INITIALIZED@{CORDAS\_\-INITIALIZED}!RootFindingCordas@{RootFindingCordas}}\index{RootFindingCordas@{RootFindingCordas}!CORDAS\_\-INITIALIZED@{CORDAS\_\-INITIALIZED}}\item[{\em 
+\hypertarget{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b1354fe30a9952fd05ac392afb7e13c3d0}{
+CORDAS\_\-INITIALIZED}
+\label{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b1354fe30a9952fd05ac392afb7e13c3d0}
+}]\index{CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}!RootFindingCordas@{RootFindingCordas}}\index{RootFindingCordas@{RootFindingCordas}!CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}}\item[{\em 
+\hypertarget{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b161cf70c0991908a217b308e24a87e14d}{
+CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}
+\label{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b161cf70c0991908a217b308e24a87e14d}
+}]\index{CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}!RootFindingCordas@{RootFindingCordas}}\index{RootFindingCordas@{RootFindingCordas}!CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}}\item[{\em 
+\hypertarget{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b1753f6f226e66a88d3b6413815c679752}{
+CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}
+\label{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b1753f6f226e66a88d3b6413815c679752}
+}]\index{CORDAS\_\-ERROR\_\-FOUND@{CORDAS\_\-ERROR\_\-FOUND}!RootFindingCordas@{RootFindingCordas}}\index{RootFindingCordas@{RootFindingCordas}!CORDAS\_\-ERROR\_\-FOUND@{CORDAS\_\-ERROR\_\-FOUND}}\item[{\em 
+\hypertarget{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b109d02da81d1e39d383d6e26a97c4c3b6}{
+CORDAS\_\-ERROR\_\-FOUND}
+\label{structRootFindingCordas_9720f2b18833ec99c78c5d1fc2e675b109d02da81d1e39d383d6e26a97c4c3b6}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 59 of file RootFindingCordas.h.\hypertarget{structRootFindingCordas_d8ce691fb5c074038507880fdc667181}{
+\paragraph["@5]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{structRootFindingCordas_d8ce691fb5c074038507880fdc667181}
+
+
+Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____cordas_gcc4b8454f6664e389c484498f42c17d8}{RootFindingCordasGetErrorCode} e \hyperlink{group____cordas_g5a6750a998093e1701c8a01ae24e9cc2}{RootFindingCordasGetErrorMessage}. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CORDAS\_\-NO\_\-ERROR@{CORDAS\_\-NO\_\-ERROR}!RootFindingCordas@{RootFindingCordas}}\index{RootFindingCordas@{RootFindingCordas}!CORDAS\_\-NO\_\-ERROR@{CORDAS\_\-NO\_\-ERROR}}\item[{\em 
+\hypertarget{structRootFindingCordas_d8ce691fb5c074038507880fdc6671813fa9461c017fe10d1f23204342e55084}{
+CORDAS\_\-NO\_\-ERROR}
+\label{structRootFindingCordas_d8ce691fb5c074038507880fdc6671813fa9461c017fe10d1f23204342e55084}
+}]\index{CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR@{CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR}!RootFindingCordas@{RootFindingCordas}}\index{RootFindingCordas@{RootFindingCordas}!CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR@{CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR}}\item[{\em 
+\hypertarget{structRootFindingCordas_d8ce691fb5c074038507880fdc6671816e75094d3e9cb381b6d45aaeb579453c}{
+CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR}
+\label{structRootFindingCordas_d8ce691fb5c074038507880fdc6671816e75094d3e9cb381b6d45aaeb579453c}
+}]\index{CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}!RootFindingCordas@{RootFindingCordas}}\index{RootFindingCordas@{RootFindingCordas}!CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}}\item[{\em 
+\hypertarget{structRootFindingCordas_d8ce691fb5c074038507880fdc6671810e6bdbf35dd606ee214c808ddc9f4c50}{
+CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}
+\label{structRootFindingCordas_d8ce691fb5c074038507880fdc6671810e6bdbf35dd606ee214c808ddc9f4c50}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 73 of file RootFindingCordas.h.
+
+\subsubsection{Field Documentation}
+\hypertarget{structRootFindingCordas_9715b440ec8443bdfda3ac2d7b388d14}{
+\index{RootFindingCordas@{RootFindingCordas}!i@{i}}
+\index{i@{i}!RootFindingCordas@{RootFindingCordas}}
+\paragraph[i]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf RootFindingCordas::i}}\hfill}
+\label{structRootFindingCordas_9715b440ec8443bdfda3ac2d7b388d14}
+
+
+
+
+Definition at line 46 of file RootFindingCordas.h.
+
+Referenced by RootFindingCordasInit(), and RootFindingCordasPerformIteration().\hypertarget{structRootFindingCordas_1bb5c50ec0b0e10e0bec0f8eda8df978}{
+\index{RootFindingCordas@{RootFindingCordas}!rootsObj@{rootsObj}}
+\index{rootsObj@{rootsObj}!RootFindingCordas@{RootFindingCordas}}
+\paragraph[rootsObj]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBaseT}$\ast$ {\bf RootFindingCordas::rootsObj}}\hfill}
+\label{structRootFindingCordas_1bb5c50ec0b0e10e0bec0f8eda8df978}
+
+
+
+
+Definition at line 47 of file RootFindingCordas.h.
+
+Referenced by getNextX(), RootFindingCordasCreate(), RootFindingCordasGetErrorMessage(), RootFindingCordasGetStateMessage(), RootFindingCordasInit(), and RootFindingCordasPerformIteration().\hypertarget{structRootFindingCordas_b7ab045a5074411ab780f33d934de627}{
+\index{RootFindingCordas@{RootFindingCordas}!c@{c}}
+\index{c@{c}!RootFindingCordas@{RootFindingCordas}}
+\paragraph[c]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingCordas::c}}\hfill}
+\label{structRootFindingCordas_b7ab045a5074411ab780f33d934de627}
+
+
+
+
+Definition at line 50 of file RootFindingCordas.h.
+
+Referenced by getNextX(), and RootFindingCordasInit().\hypertarget{structRootFindingCordas_36d104146b164a3da07f9d3f60a04506}{
+\index{RootFindingCordas@{RootFindingCordas}!fC@{fC}}
+\index{fC@{fC}!RootFindingCordas@{RootFindingCordas}}
+\paragraph[fC]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingCordas::fC}}\hfill}
+\label{structRootFindingCordas_36d104146b164a3da07f9d3f60a04506}
+
+
+
+
+Definition at line 51 of file RootFindingCordas.h.
+
+Referenced by getNextX(), and RootFindingCordasInit().\hypertarget{structRootFindingCordas_1823f4e1787202f918fdd00f95792d1f}{
+\index{RootFindingCordas@{RootFindingCordas}!maxIterations@{maxIterations}}
+\index{maxIterations@{maxIterations}!RootFindingCordas@{RootFindingCordas}}
+\paragraph[maxIterations]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf RootFindingCordas::maxIterations}}\hfill}
+\label{structRootFindingCordas_1823f4e1787202f918fdd00f95792d1f}
+
+
+
+
+Definition at line 52 of file RootFindingCordas.h.
+
+Referenced by RootFindingCordasCreate(), RootFindingCordasGetStateMessage(), and RootFindingCordasPerformIteration().\hypertarget{structRootFindingCordas_692d6a123f5a6e5d42081bee02560f45}{
+\index{RootFindingCordas@{RootFindingCordas}!tolerance@{tolerance}}
+\index{tolerance@{tolerance}!RootFindingCordas@{RootFindingCordas}}
+\paragraph[tolerance]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingCordas::tolerance}}\hfill}
+\label{structRootFindingCordas_692d6a123f5a6e5d42081bee02560f45}
+
+
+
+
+Definition at line 53 of file RootFindingCordas.h.
+
+Referenced by RootFindingCordasCreate(), RootFindingCordasGetStateMessage(), and RootFindingCordasPerformIteration().\hypertarget{structRootFindingCordas_1cf4fb48b5b925ba6ff392679e98ffec}{
+\index{RootFindingCordas@{RootFindingCordas}!state@{state}}
+\index{state@{state}!RootFindingCordas@{RootFindingCordas}}
+\paragraph[state]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   {\bf RootFindingCordas::state}}\hfill}
+\label{structRootFindingCordas_1cf4fb48b5b925ba6ff392679e98ffec}
+
+
+Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____cordas_g67aaf428f922e7d15a7fbd5a4508ffd7}{RootFindingCordasGetStateCode} e \hyperlink{group____cordas_ga065f13f2ec77b2e949190c1aca9ef9d}{RootFindingCordasGetStateMessage}. 
+
+
+
+Referenced by resetError(), RootFindingCordasCreate(), RootFindingCordasGetStateCode(), RootFindingCordasGetStateMessage(), RootFindingCordasInit(), RootFindingCordasPerformIteration(), and setError().\hypertarget{structRootFindingCordas_237764d1db5221c0fb51189ae84b626a}{
+\index{RootFindingCordas@{RootFindingCordas}!errorCode@{errorCode}}
+\index{errorCode@{errorCode}!RootFindingCordas@{RootFindingCordas}}
+\paragraph[errorCode]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   {\bf RootFindingCordas::errorCode}}\hfill}
+\label{structRootFindingCordas_237764d1db5221c0fb51189ae84b626a}
+
+
+Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____cordas_gcc4b8454f6664e389c484498f42c17d8}{RootFindingCordasGetErrorCode} e \hyperlink{group____cordas_g5a6750a998093e1701c8a01ae24e9cc2}{RootFindingCordasGetErrorMessage}. 
+
+
+
+Referenced by resetError(), RootFindingCordasGetErrorCode(), RootFindingCordasGetErrorMessage(), RootFindingCordasHasError(), and setError().
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/\hyperlink{RootFindingCordas_8h}{RootFindingCordas.h}\end{CompactItemize}

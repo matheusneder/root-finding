@@ -1,0 +1,680 @@
+\hypertarget{group____messages}{
+\subsection{Mensagens de estados e erros}
+\label{group____messages}\index{Mensagens de estados e erros@{Mensagens de estados e erros}}
+}
+\subsubsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{group____messages_g9d5756daf9e0e99c65a2b72531a0b765}{MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR}~\char`\"{}Erro desconhecido.\char`\"{}
+\item 
+\#define \hyperlink{group____messages_gf33ab54fcaa61fcc47cb9c5dece317e2}{MSG\_\-ROOTS\_\-UNKNOW\_\-STATE}~\char`\"{}Estado desconhecido.\char`\"{}
+\item 
+\#define \hyperlink{group____messages_g1cd065e37768f9ba5e945f01e5223149}{MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}
+\item 
+\#define \hyperlink{group____messages_g07f4e1141d65130c4dad0a273735d81e}{MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}
+\item 
+\#define \hyperlink{group____messages_gc4f8d165b6144573adc8ce2776826c49}{MSG\_\-GENERIC\_\-NO\_\-ERROR}~\char`\"{}Nao ocorreu erro.\char`\"{}
+\item 
+\#define \hyperlink{group____messages_g256cb6d156d41a9029016f3284a43a19}{MSG\_\-GENERIC\_\-ERROR\_\-FOUND}~\char`\"{}Ocorreu erro.\char`\"{};
+\item 
+\#define \hyperlink{group____messages_gb9e27a0fd9a540c07295263a8daa57e1}{MSG\_\-GENERIC\_\-NOT\_\-INIT}~\char`\"{}Nao inicializado.\char`\"{}
+\item 
+\#define \hyperlink{group____messages_g37731c9a9a8f20520f275e8cd3e75491}{MSG\_\-GENERIC\_\-INITIALIZED}~\char`\"{}Inicializado.\char`\"{}
+\item 
+\#define \hyperlink{group____messages_g00d31c81dbc7f971424196036c148a1a}{MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}
+\item 
+\#define \hyperlink{group____messages_gce1123edca28cb0b02531869093e7214}{MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR}
+\item 
+\#define \hyperlink{group____messages_g8ccd3ef3d66c52d9a2f5c56b7c62e837}{MSG\_\-ROOTS\_\-NO\_\-ERROR}~MSG\_\-GENERIC\_\-NO\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_g4c5e1f67fc078b0bb717e112d9ecad23}{MSG\_\-ROOTS\_\-MUP\_\-EVAL\_\-ERROR}~\char`\"{}Erro c/ expressao do objeto muParser\char`\"{}
+\item 
+\#define \hyperlink{group____messages_g1257e2172f0d24792e5bae382b6c8ffd}{MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0}
+\item 
+\#define \hyperlink{group____messages_ge0c1e0d68faa6da65e9ff27c587fe1e7}{MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY}
+\item 
+\#define \hyperlink{group____messages_g351b0a132b97b932e9152973ca84ab0f}{MSG\_\-ROOTS\_\-RANGE\_\-NOT\_\-SET}~\char`\"{}Intervalo nao esta definido.\char`\"{}
+\item 
+\#define \hyperlink{group____messages_gf99c4ab1f930201e0632f3d2e3267438}{MSG\_\-ROOTS\_\-READY}~\char`\"{}Objeto \hyperlink{structRootFindingBase}{RootFindingBase} esta pronto.\char`\"{}
+\item 
+\#define \hyperlink{group____messages_gb6dcd48efc265c326e568344c2040775}{MSG\_\-ROOTS\_\-EXACT\_\-ROOT\_\-FOUND}~\char`\"{}Encontrado a raiz exata: \%lf.\char`\"{}
+\item 
+\#define \hyperlink{group____messages_g1327a0d7098c8506ebbba8fa51a2861c}{MSG\_\-BISSECAO\_\-NO\_\-ERROR}~MSG\_\-GENERIC\_\-NO\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_g40526857730e9af294e61ff82c37c989}{MSG\_\-BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}~MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_g532d2bf3026df42582d5fa103bbc3188}{MSG\_\-BISSECAO\_\-NOT\_\-INIT}~MSG\_\-GENERIC\_\-NOT\_\-INIT
+\item 
+\#define \hyperlink{group____messages_gd7a7400cbd6447204201e1338a9faf5e}{MSG\_\-BISSECAO\_\-INITIALIZED}~MSG\_\-GENERIC\_\-INITIALIZED
+\item 
+\#define \hyperlink{group____messages_gad91cc85f95e709099e9e0b7c4c78648}{MSG\_\-BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}~MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED
+\item 
+\#define \hyperlink{group____messages_g419a2b04764be63f8c5bd9a2d561fbdf}{MSG\_\-BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}~MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND
+\item 
+\#define \hyperlink{group____messages_g045864209c190bf6517acac3482a4eeb}{MSG\_\-BISSECAO\_\-ERROR\_\-FOUND}~MSG\_\-GENERIC\_\-ERROR\_\-FOUND
+\item 
+\#define \hyperlink{group____messages_ge43ef9f2448a816d8f5a66a10be9ecc6}{MSG\_\-CORDAS\_\-NO\_\-ERROR}~MSG\_\-GENERIC\_\-NO\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_g5c53fb596fa16a011c11b5f774fc734c}{MSG\_\-CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR}~MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_g3833ee2af65442ebe52a0b8894d0ffba}{MSG\_\-CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}~MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_gaad95696ca51302bb4eeda73e504af28}{MSG\_\-CORDAS\_\-NOT\_\-INIT}~MSG\_\-GENERIC\_\-NOT\_\-INIT
+\item 
+\#define \hyperlink{group____messages_g65513cb1fdadbdf469b3e7ebfd3368fd}{MSG\_\-CORDAS\_\-INITIALIZED}~MSG\_\-GENERIC\_\-INITIALIZED
+\item 
+\#define \hyperlink{group____messages_gbf2eaacf66da6f1a3ff81d41a6d494ea}{MSG\_\-CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}~MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED
+\item 
+\#define \hyperlink{group____messages_g3ec8f3193397bc6bd52fa50ee40e4768}{MSG\_\-CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}~MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND
+\item 
+\#define \hyperlink{group____messages_gdceb3235c5e378df5e9204c5bd9802b9}{MSG\_\-CORDAS\_\-ERROR\_\-FOUND}~MSG\_\-GENERIC\_\-ERROR\_\-FOUND
+\item 
+\#define \hyperlink{group____messages_g40705a83db640354a9ed6bdd2ae0d83b}{MSG\_\-NEWTON\_\-NO\_\-ERROR}~MSG\_\-GENERIC\_\-NO\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_g7f96c9da7fd5cde69744cd01fc5316a3}{MSG\_\-NEWTON\_\-2NDIFF\_\-TEST\_\-ERROR}~MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_g00fe718729c6efcf4a3bf8187b8f1c9d}{MSG\_\-NEWTON\_\-2NDIFFA\_\-2NDIFFB\_\-SIGN\_\-NOT\_\-EQUALS\_\-ERROR}
+\item 
+\#define \hyperlink{group____messages_g2e4a5cee2ec2eb38f4849592b3a5c126}{MSG\_\-NEWTON\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}
+\item 
+\#define \hyperlink{group____messages_ga1b4ab745166b225744424592a99ac26}{MSG\_\-NEWTON\_\-NOT\_\-INIT}~MSG\_\-GENERIC\_\-NOT\_\-INIT
+\item 
+\#define \hyperlink{group____messages_ga3c35d88429baed6d9cc86243ea0370c}{MSG\_\-NEWTON\_\-INITIALIZED}~MSG\_\-GENERIC\_\-INITIALIZED
+\item 
+\#define \hyperlink{group____messages_g945597514c7386c4cf8501ed89dea0ec}{MSG\_\-NEWTON\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}~MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED
+\item 
+\#define \hyperlink{group____messages_g6a854f8d5023cff404a1462cb4ec86ec}{MSG\_\-NEWTON\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}~MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND
+\item 
+\#define \hyperlink{group____messages_g07aef7b29efc8c9c6175746948f1e909}{MSG\_\-NEWTON\_\-ERROR\_\-FOUND}~MSG\_\-GENERIC\_\-ERROR\_\-FOUND
+\item 
+\#define \hyperlink{group____messages_g007c9369adc25cf104727b8838460c48}{MSG\_\-PEGASO\_\-NO\_\-ERROR}~MSG\_\-GENERIC\_\-NO\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_g0785e9a82bbfd11bf313a7bde2f302dd}{MSG\_\-PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}~MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR
+\item 
+\#define \hyperlink{group____messages_ga35bc5993a30a166820f1bbf7843646d}{MSG\_\-PEGASO\_\-NOT\_\-INIT}~MSG\_\-GENERIC\_\-NOT\_\-INIT
+\item 
+\#define \hyperlink{group____messages_g1f0c0e6ae1166d8ebb0e48216dbd2c8b}{MSG\_\-PEGASO\_\-INITIALIZED}~MSG\_\-GENERIC\_\-INITIALIZED
+\item 
+\#define \hyperlink{group____messages_g7559f15f358baf95e22bf7c7acea5fa1}{MSG\_\-PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}~MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED
+\item 
+\#define \hyperlink{group____messages_g4d326b97fe84c2b5bb115e5c98e7b10e}{MSG\_\-PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}~MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND
+\item 
+\#define \hyperlink{group____messages_g7dea968f607ba6d45ced25ab97a9030c}{MSG\_\-PEGASO\_\-ERROR\_\-FOUND}~MSG\_\-GENERIC\_\-ERROR\_\-FOUND
+\end{CompactItemize}
+
+
+\subsubsection{Define Documentation}
+\hypertarget{group____messages_g419a2b04764be63f8c5bd9a2d561fbdf}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}}
+\index{MSG\_\-BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-BISSECAO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND~MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}\hfill}
+\label{group____messages_g419a2b04764be63f8c5bd9a2d561fbdf}
+
+
+
+
+Definition at line 83 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBissecaoGetStateMessage().\hypertarget{group____messages_g045864209c190bf6517acac3482a4eeb}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-BISSECAO\_\-ERROR\_\-FOUND@{MSG\_\-BISSECAO\_\-ERROR\_\-FOUND}}
+\index{MSG\_\-BISSECAO\_\-ERROR\_\-FOUND@{MSG\_\-BISSECAO\_\-ERROR\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-BISSECAO\_\-ERROR\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-BISSECAO\_\-ERROR\_\-FOUND~MSG\_\-GENERIC\_\-ERROR\_\-FOUND}\hfill}
+\label{group____messages_g045864209c190bf6517acac3482a4eeb}
+
+
+
+
+Definition at line 84 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBissecaoGetStateMessage().\hypertarget{group____messages_gd7a7400cbd6447204201e1338a9faf5e}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-BISSECAO\_\-INITIALIZED@{MSG\_\-BISSECAO\_\-INITIALIZED}}
+\index{MSG\_\-BISSECAO\_\-INITIALIZED@{MSG\_\-BISSECAO\_\-INITIALIZED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-BISSECAO\_\-INITIALIZED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-BISSECAO\_\-INITIALIZED~MSG\_\-GENERIC\_\-INITIALIZED}\hfill}
+\label{group____messages_gd7a7400cbd6447204201e1338a9faf5e}
+
+
+
+
+Definition at line 81 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBissecaoGetStateMessage().\hypertarget{group____messages_gad91cc85f95e709099e9e0b7c4c78648}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}}
+\index{MSG\_\-BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-BISSECAO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED~MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}\hfill}
+\label{group____messages_gad91cc85f95e709099e9e0b7c4c78648}
+
+
+
+
+Definition at line 82 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBissecaoGetStateMessage().\hypertarget{group____messages_g1327a0d7098c8506ebbba8fa51a2861c}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-BISSECAO\_\-NO\_\-ERROR@{MSG\_\-BISSECAO\_\-NO\_\-ERROR}}
+\index{MSG\_\-BISSECAO\_\-NO\_\-ERROR@{MSG\_\-BISSECAO\_\-NO\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-BISSECAO\_\-NO\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-BISSECAO\_\-NO\_\-ERROR~MSG\_\-GENERIC\_\-NO\_\-ERROR}\hfill}
+\label{group____messages_g1327a0d7098c8506ebbba8fa51a2861c}
+
+
+
+
+Definition at line 76 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBissecaoGetErrorMessage().\hypertarget{group____messages_g532d2bf3026df42582d5fa103bbc3188}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-BISSECAO\_\-NOT\_\-INIT@{MSG\_\-BISSECAO\_\-NOT\_\-INIT}}
+\index{MSG\_\-BISSECAO\_\-NOT\_\-INIT@{MSG\_\-BISSECAO\_\-NOT\_\-INIT}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-BISSECAO\_\-NOT\_\-INIT]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-BISSECAO\_\-NOT\_\-INIT~MSG\_\-GENERIC\_\-NOT\_\-INIT}\hfill}
+\label{group____messages_g532d2bf3026df42582d5fa103bbc3188}
+
+
+
+
+Definition at line 80 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBissecaoGetStateMessage().\hypertarget{group____messages_g40526857730e9af294e61ff82c37c989}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}}
+\index{MSG\_\-BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-BISSECAO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR~MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}\hfill}
+\label{group____messages_g40526857730e9af294e61ff82c37c989}
+
+
+
+
+Definition at line 77 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBissecaoGetErrorMessage().\hypertarget{group____messages_g5c53fb596fa16a011c11b5f774fc734c}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR@{MSG\_\-CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR}}
+\index{MSG\_\-CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR@{MSG\_\-CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR~MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR}\hfill}
+\label{group____messages_g5c53fb596fa16a011c11b5f774fc734c}
+
+
+
+
+Definition at line 89 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingCordasGetErrorMessage().\hypertarget{group____messages_g3ec8f3193397bc6bd52fa50ee40e4768}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}}
+\index{MSG\_\-CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND~MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}\hfill}
+\label{group____messages_g3ec8f3193397bc6bd52fa50ee40e4768}
+
+
+
+
+Definition at line 97 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingCordasGetStateMessage().\hypertarget{group____messages_gdceb3235c5e378df5e9204c5bd9802b9}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-CORDAS\_\-ERROR\_\-FOUND@{MSG\_\-CORDAS\_\-ERROR\_\-FOUND}}
+\index{MSG\_\-CORDAS\_\-ERROR\_\-FOUND@{MSG\_\-CORDAS\_\-ERROR\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-CORDAS\_\-ERROR\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-CORDAS\_\-ERROR\_\-FOUND~MSG\_\-GENERIC\_\-ERROR\_\-FOUND}\hfill}
+\label{group____messages_gdceb3235c5e378df5e9204c5bd9802b9}
+
+
+
+
+Definition at line 98 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingCordasGetStateMessage().\hypertarget{group____messages_g65513cb1fdadbdf469b3e7ebfd3368fd}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-CORDAS\_\-INITIALIZED@{MSG\_\-CORDAS\_\-INITIALIZED}}
+\index{MSG\_\-CORDAS\_\-INITIALIZED@{MSG\_\-CORDAS\_\-INITIALIZED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-CORDAS\_\-INITIALIZED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-CORDAS\_\-INITIALIZED~MSG\_\-GENERIC\_\-INITIALIZED}\hfill}
+\label{group____messages_g65513cb1fdadbdf469b3e7ebfd3368fd}
+
+
+
+
+Definition at line 95 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingCordasGetStateMessage().\hypertarget{group____messages_gbf2eaacf66da6f1a3ff81d41a6d494ea}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}}
+\index{MSG\_\-CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED~MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}\hfill}
+\label{group____messages_gbf2eaacf66da6f1a3ff81d41a6d494ea}
+
+
+
+
+Definition at line 96 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingCordasGetStateMessage().\hypertarget{group____messages_ge43ef9f2448a816d8f5a66a10be9ecc6}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-CORDAS\_\-NO\_\-ERROR@{MSG\_\-CORDAS\_\-NO\_\-ERROR}}
+\index{MSG\_\-CORDAS\_\-NO\_\-ERROR@{MSG\_\-CORDAS\_\-NO\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-CORDAS\_\-NO\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-CORDAS\_\-NO\_\-ERROR~MSG\_\-GENERIC\_\-NO\_\-ERROR}\hfill}
+\label{group____messages_ge43ef9f2448a816d8f5a66a10be9ecc6}
+
+
+
+
+Definition at line 87 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingCordasGetErrorMessage().\hypertarget{group____messages_gaad95696ca51302bb4eeda73e504af28}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-CORDAS\_\-NOT\_\-INIT@{MSG\_\-CORDAS\_\-NOT\_\-INIT}}
+\index{MSG\_\-CORDAS\_\-NOT\_\-INIT@{MSG\_\-CORDAS\_\-NOT\_\-INIT}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-CORDAS\_\-NOT\_\-INIT]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-CORDAS\_\-NOT\_\-INIT~MSG\_\-GENERIC\_\-NOT\_\-INIT}\hfill}
+\label{group____messages_gaad95696ca51302bb4eeda73e504af28}
+
+
+
+
+Definition at line 94 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingCordasGetStateMessage().\hypertarget{group____messages_g3833ee2af65442ebe52a0b8894d0ffba}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}}
+\index{MSG\_\-CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR~MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}\hfill}
+\label{group____messages_g3833ee2af65442ebe52a0b8894d0ffba}
+
+
+
+
+Definition at line 91 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingCordasGetErrorMessage().\hypertarget{group____messages_gce1123edca28cb0b02531869093e7214}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR@{MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR}}
+\index{MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR@{MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR}\hfill}
+\label{group____messages_gce1123edca28cb0b02531869093e7214}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}"O teste da segunda derivada "\
+                                                    "falhou para ambos os extremos"\
+                                                    "do intervalo [%lf, %lf]."
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 56 of file RootFindingMessages\_\-PT-BR.h.\hypertarget{group____messages_g1cd065e37768f9ba5e945f01e5223149}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}}
+\index{MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}\hfill}
+\label{group____messages_g1cd065e37768f9ba5e945f01e5223149}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}"Encontrado uma aproximacao da raiz: %lf "\
+                                                    "(com e = %lg)."
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 38 of file RootFindingMessages\_\-PT-BR.h.\hypertarget{group____messages_g256cb6d156d41a9029016f3284a43a19}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-GENERIC\_\-ERROR\_\-FOUND@{MSG\_\-GENERIC\_\-ERROR\_\-FOUND}}
+\index{MSG\_\-GENERIC\_\-ERROR\_\-FOUND@{MSG\_\-GENERIC\_\-ERROR\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-GENERIC\_\-ERROR\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-GENERIC\_\-ERROR\_\-FOUND~\char`\"{}Ocorreu erro.\char`\"{};}\hfill}
+\label{group____messages_g256cb6d156d41a9029016f3284a43a19}
+
+
+
+
+Definition at line 49 of file RootFindingMessages\_\-PT-BR.h.\hypertarget{group____messages_g37731c9a9a8f20520f275e8cd3e75491}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-GENERIC\_\-INITIALIZED@{MSG\_\-GENERIC\_\-INITIALIZED}}
+\index{MSG\_\-GENERIC\_\-INITIALIZED@{MSG\_\-GENERIC\_\-INITIALIZED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-GENERIC\_\-INITIALIZED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-GENERIC\_\-INITIALIZED~\char`\"{}Inicializado.\char`\"{}}\hfill}
+\label{group____messages_g37731c9a9a8f20520f275e8cd3e75491}
+
+
+
+
+Definition at line 51 of file RootFindingMessages\_\-PT-BR.h.\hypertarget{group____messages_g07f4e1141d65130c4dad0a273735d81e}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}}
+\index{MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}\hfill}
+\label{group____messages_g07f4e1141d65130c4dad0a273735d81e}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}"Nao pode ser encontrado "\
+                                                    "uma aproximacao "\
+                                                    "(com t <= %lg) para o limite "\
+                                                    "de iteracoes igual a %u.\n"\
+                                                    "\n"\
+                                                    "O valor obtido foi: %lf (com e = %lg)."
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 41 of file RootFindingMessages\_\-PT-BR.h.\hypertarget{group____messages_gc4f8d165b6144573adc8ce2776826c49}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-GENERIC\_\-NO\_\-ERROR@{MSG\_\-GENERIC\_\-NO\_\-ERROR}}
+\index{MSG\_\-GENERIC\_\-NO\_\-ERROR@{MSG\_\-GENERIC\_\-NO\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-GENERIC\_\-NO\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-GENERIC\_\-NO\_\-ERROR~\char`\"{}Nao ocorreu erro.\char`\"{}}\hfill}
+\label{group____messages_gc4f8d165b6144573adc8ce2776826c49}
+
+
+
+
+Definition at line 48 of file RootFindingMessages\_\-PT-BR.h.\hypertarget{group____messages_gb9e27a0fd9a540c07295263a8daa57e1}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-GENERIC\_\-NOT\_\-INIT@{MSG\_\-GENERIC\_\-NOT\_\-INIT}}
+\index{MSG\_\-GENERIC\_\-NOT\_\-INIT@{MSG\_\-GENERIC\_\-NOT\_\-INIT}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-GENERIC\_\-NOT\_\-INIT]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-GENERIC\_\-NOT\_\-INIT~\char`\"{}Nao inicializado.\char`\"{}}\hfill}
+\label{group____messages_gb9e27a0fd9a540c07295263a8daa57e1}
+
+
+
+
+Definition at line 50 of file RootFindingMessages\_\-PT-BR.h.\hypertarget{group____messages_g00d31c81dbc7f971424196036c148a1a}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}}
+\index{MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}\hfill}
+\label{group____messages_g00d31c81dbc7f971424196036c148a1a}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}"Ocorreu uma indeterminacao do "\
+                                                    "tipo (0/0, inf/inf ...) durante o processo."
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 53 of file RootFindingMessages\_\-PT-BR.h.\hypertarget{group____messages_g7f96c9da7fd5cde69744cd01fc5316a3}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-2NDIFF\_\-TEST\_\-ERROR@{MSG\_\-NEWTON\_\-2NDIFF\_\-TEST\_\-ERROR}}
+\index{MSG\_\-NEWTON\_\-2NDIFF\_\-TEST\_\-ERROR@{MSG\_\-NEWTON\_\-2NDIFF\_\-TEST\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-2NDIFF\_\-TEST\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-2NDIFF\_\-TEST\_\-ERROR~MSG\_\-GENERIC\_\-2NDIFF\_\-TEST\_\-ERROR}\hfill}
+\label{group____messages_g7f96c9da7fd5cde69744cd01fc5316a3}
+
+
+
+
+Definition at line 103 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetErrorMessage().\hypertarget{group____messages_g00fe718729c6efcf4a3bf8187b8f1c9d}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-2NDIFFA\_\-2NDIFFB\_\-SIGN\_\-NOT\_\-EQUALS\_\-ERROR@{MSG\_\-NEWTON\_\-2NDIFFA\_\-2NDIFFB\_\-SIGN\_\-NOT\_\-EQUALS\_\-ERROR}}
+\index{MSG\_\-NEWTON\_\-2NDIFFA\_\-2NDIFFB\_\-SIGN\_\-NOT\_\-EQUALS\_\-ERROR@{MSG\_\-NEWTON\_\-2NDIFFA\_\-2NDIFFB\_\-SIGN\_\-NOT\_\-EQUALS\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-2NDIFFA\_\-2NDIFFB\_\-SIGN\_\-NOT\_\-EQUALS\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-2NDIFFA\_\-2NDIFFB\_\-SIGN\_\-NOT\_\-EQUALS\_\-ERROR}\hfill}
+\label{group____messages_g00fe718729c6efcf4a3bf8187b8f1c9d}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}"O sinal da segunda derivada nos extremos "\
+                                                    "do intervalo [%lf, %lf] nao se conserva."
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 105 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetErrorMessage().\hypertarget{group____messages_g6a854f8d5023cff404a1462cb4ec86ec}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-NEWTON\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}}
+\index{MSG\_\-NEWTON\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-NEWTON\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-APPROXIMANTION\_\-ROOT\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-APPROXIMANTION\_\-ROOT\_\-FOUND~MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}\hfill}
+\label{group____messages_g6a854f8d5023cff404a1462cb4ec86ec}
+
+
+
+
+Definition at line 124 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetStateMessage().\hypertarget{group____messages_g07aef7b29efc8c9c6175746948f1e909}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-ERROR\_\-FOUND@{MSG\_\-NEWTON\_\-ERROR\_\-FOUND}}
+\index{MSG\_\-NEWTON\_\-ERROR\_\-FOUND@{MSG\_\-NEWTON\_\-ERROR\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-ERROR\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-ERROR\_\-FOUND~MSG\_\-GENERIC\_\-ERROR\_\-FOUND}\hfill}
+\label{group____messages_g07aef7b29efc8c9c6175746948f1e909}
+
+
+
+
+Definition at line 125 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetStateMessage().\hypertarget{group____messages_ga3c35d88429baed6d9cc86243ea0370c}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-INITIALIZED@{MSG\_\-NEWTON\_\-INITIALIZED}}
+\index{MSG\_\-NEWTON\_\-INITIALIZED@{MSG\_\-NEWTON\_\-INITIALIZED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-INITIALIZED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-INITIALIZED~MSG\_\-GENERIC\_\-INITIALIZED}\hfill}
+\label{group____messages_ga3c35d88429baed6d9cc86243ea0370c}
+
+
+
+
+Definition at line 122 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetStateMessage().\hypertarget{group____messages_g945597514c7386c4cf8501ed89dea0ec}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-NEWTON\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}}
+\index{MSG\_\-NEWTON\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-NEWTON\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED~MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}\hfill}
+\label{group____messages_g945597514c7386c4cf8501ed89dea0ec}
+
+
+
+
+Definition at line 123 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetStateMessage().\hypertarget{group____messages_g40705a83db640354a9ed6bdd2ae0d83b}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-NO\_\-ERROR@{MSG\_\-NEWTON\_\-NO\_\-ERROR}}
+\index{MSG\_\-NEWTON\_\-NO\_\-ERROR@{MSG\_\-NEWTON\_\-NO\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-NO\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-NO\_\-ERROR~MSG\_\-GENERIC\_\-NO\_\-ERROR}\hfill}
+\label{group____messages_g40705a83db640354a9ed6bdd2ae0d83b}
+
+
+
+
+Definition at line 101 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetErrorMessage().\hypertarget{group____messages_ga1b4ab745166b225744424592a99ac26}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-NOT\_\-INIT@{MSG\_\-NEWTON\_\-NOT\_\-INIT}}
+\index{MSG\_\-NEWTON\_\-NOT\_\-INIT@{MSG\_\-NEWTON\_\-NOT\_\-INIT}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-NOT\_\-INIT]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-NOT\_\-INIT~MSG\_\-GENERIC\_\-NOT\_\-INIT}\hfill}
+\label{group____messages_ga1b4ab745166b225744424592a99ac26}
+
+
+
+
+Definition at line 121 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetStateMessage().\hypertarget{group____messages_g2e4a5cee2ec2eb38f4849592b3a5c126}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-NEWTON\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-NEWTON\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}}
+\index{MSG\_\-NEWTON\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-NEWTON\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-NEWTON\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-NEWTON\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}\hfill}
+\label{group____messages_g2e4a5cee2ec2eb38f4849592b3a5c126}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}"Nao pode ser encontrada uma aproximacao "\
+                                                    "para a raiz. A causa mais provavel "\
+                                                    "eh de que a derivada da funcao "\
+                                                    "no ponto da iteracao imediatamente posterior "\
+                                                    "a do ponto '%lf' "\
+                                                    "seja igual a 0.\n"\
+                                                    "\n"\
+                                                    "O valor encontrado ateh a "\
+                                                    "iteracao onde ocorreu o problema foi:"\
+                                                    "%lf (com e = %lg)."
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 109 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingNewtonRhapsonGetErrorMessage().\hypertarget{group____messages_g4d326b97fe84c2b5bb115e5c98e7b10e}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}}
+\index{MSG\_\-PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND@{MSG\_\-PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND~MSG\_\-GENERIC\_\-APPROXIMANTION\_\-ROOT\_\-FOUND}\hfill}
+\label{group____messages_g4d326b97fe84c2b5bb115e5c98e7b10e}
+
+
+
+
+Definition at line 135 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingPegasoGetStateMessage().\hypertarget{group____messages_g7dea968f607ba6d45ced25ab97a9030c}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-PEGASO\_\-ERROR\_\-FOUND@{MSG\_\-PEGASO\_\-ERROR\_\-FOUND}}
+\index{MSG\_\-PEGASO\_\-ERROR\_\-FOUND@{MSG\_\-PEGASO\_\-ERROR\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-PEGASO\_\-ERROR\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-PEGASO\_\-ERROR\_\-FOUND~MSG\_\-GENERIC\_\-ERROR\_\-FOUND}\hfill}
+\label{group____messages_g7dea968f607ba6d45ced25ab97a9030c}
+
+
+
+
+Definition at line 136 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingPegasoGetStateMessage().\hypertarget{group____messages_g1f0c0e6ae1166d8ebb0e48216dbd2c8b}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-PEGASO\_\-INITIALIZED@{MSG\_\-PEGASO\_\-INITIALIZED}}
+\index{MSG\_\-PEGASO\_\-INITIALIZED@{MSG\_\-PEGASO\_\-INITIALIZED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-PEGASO\_\-INITIALIZED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-PEGASO\_\-INITIALIZED~MSG\_\-GENERIC\_\-INITIALIZED}\hfill}
+\label{group____messages_g1f0c0e6ae1166d8ebb0e48216dbd2c8b}
+
+
+
+
+Definition at line 133 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingPegasoGetStateMessage().\hypertarget{group____messages_g7559f15f358baf95e22bf7c7acea5fa1}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}}
+\index{MSG\_\-PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED@{MSG\_\-PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED~MSG\_\-GENERIC\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED}\hfill}
+\label{group____messages_g7559f15f358baf95e22bf7c7acea5fa1}
+
+
+
+
+Definition at line 134 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingPegasoGetStateMessage().\hypertarget{group____messages_g007c9369adc25cf104727b8838460c48}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-PEGASO\_\-NO\_\-ERROR@{MSG\_\-PEGASO\_\-NO\_\-ERROR}}
+\index{MSG\_\-PEGASO\_\-NO\_\-ERROR@{MSG\_\-PEGASO\_\-NO\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-PEGASO\_\-NO\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-PEGASO\_\-NO\_\-ERROR~MSG\_\-GENERIC\_\-NO\_\-ERROR}\hfill}
+\label{group____messages_g007c9369adc25cf104727b8838460c48}
+
+
+
+
+Definition at line 128 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingPegasoGetErrorMessage().\hypertarget{group____messages_ga35bc5993a30a166820f1bbf7843646d}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-PEGASO\_\-NOT\_\-INIT@{MSG\_\-PEGASO\_\-NOT\_\-INIT}}
+\index{MSG\_\-PEGASO\_\-NOT\_\-INIT@{MSG\_\-PEGASO\_\-NOT\_\-INIT}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-PEGASO\_\-NOT\_\-INIT]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-PEGASO\_\-NOT\_\-INIT~MSG\_\-GENERIC\_\-NOT\_\-INIT}\hfill}
+\label{group____messages_ga35bc5993a30a166820f1bbf7843646d}
+
+
+
+
+Definition at line 132 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingPegasoGetStateMessage().\hypertarget{group____messages_g0785e9a82bbfd11bf313a7bde2f302dd}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}}
+\index{MSG\_\-PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR@{MSG\_\-PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR~MSG\_\-GENERIC\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR}\hfill}
+\label{group____messages_g0785e9a82bbfd11bf313a7bde2f302dd}
+
+
+
+
+Definition at line 129 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingPegasoGetErrorMessage().\hypertarget{group____messages_gb6dcd48efc265c326e568344c2040775}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-EXACT\_\-ROOT\_\-FOUND@{MSG\_\-ROOTS\_\-EXACT\_\-ROOT\_\-FOUND}}
+\index{MSG\_\-ROOTS\_\-EXACT\_\-ROOT\_\-FOUND@{MSG\_\-ROOTS\_\-EXACT\_\-ROOT\_\-FOUND}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-EXACT\_\-ROOT\_\-FOUND]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-EXACT\_\-ROOT\_\-FOUND~\char`\"{}Encontrado a raiz exata: \%lf.\char`\"{}}\hfill}
+\label{group____messages_gb6dcd48efc265c326e568344c2040775}
+
+
+
+
+Definition at line 73 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetStateMessage().\hypertarget{group____messages_g4c5e1f67fc078b0bb717e112d9ecad23}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-MUP\_\-EVAL\_\-ERROR@{MSG\_\-ROOTS\_\-MUP\_\-EVAL\_\-ERROR}}
+\index{MSG\_\-ROOTS\_\-MUP\_\-EVAL\_\-ERROR@{MSG\_\-ROOTS\_\-MUP\_\-EVAL\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-MUP\_\-EVAL\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-MUP\_\-EVAL\_\-ERROR~\char`\"{}Erro c/ expressao do objeto muParser\char`\"{}}\hfill}
+\label{group____messages_g4c5e1f67fc078b0bb717e112d9ecad23}
+
+
+
+
+Definition at line 62 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetErrorMessage().\hypertarget{group____messages_g8ccd3ef3d66c52d9a2f5c56b7c62e837}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-NO\_\-ERROR@{MSG\_\-ROOTS\_\-NO\_\-ERROR}}
+\index{MSG\_\-ROOTS\_\-NO\_\-ERROR@{MSG\_\-ROOTS\_\-NO\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-NO\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-NO\_\-ERROR~MSG\_\-GENERIC\_\-NO\_\-ERROR}\hfill}
+\label{group____messages_g8ccd3ef3d66c52d9a2f5c56b7c62e837}
+
+
+
+
+Definition at line 61 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetErrorMessage().\hypertarget{group____messages_ge0c1e0d68faa6da65e9ff27c587fe1e7}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY@{MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY}}
+\index{MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY@{MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY}\hfill}
+\label{group____messages_ge0c1e0d68faa6da65e9ff27c587fe1e7}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}"A funcao nao esta definida para um ou ambos "\
+                                                    "dos extremos de [%lf, %lf]."
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 67 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetErrorMessage().\hypertarget{group____messages_g1257e2172f0d24792e5bae382b6c8ffd}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0@{MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0}}
+\index{MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0@{MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0}\hfill}
+\label{group____messages_g1257e2172f0d24792e5bae382b6c8ffd}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}"f(%lf) * f(%lf) >= 0, portanto nao eh possivel "\
+                                                    "procurar raizes no intervalo."
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 64 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetErrorMessage().\hypertarget{group____messages_g351b0a132b97b932e9152973ca84ab0f}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-RANGE\_\-NOT\_\-SET@{MSG\_\-ROOTS\_\-RANGE\_\-NOT\_\-SET}}
+\index{MSG\_\-ROOTS\_\-RANGE\_\-NOT\_\-SET@{MSG\_\-ROOTS\_\-RANGE\_\-NOT\_\-SET}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-RANGE\_\-NOT\_\-SET]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-RANGE\_\-NOT\_\-SET~\char`\"{}Intervalo nao esta definido.\char`\"{}}\hfill}
+\label{group____messages_g351b0a132b97b932e9152973ca84ab0f}
+
+
+
+
+Definition at line 71 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetStateMessage().\hypertarget{group____messages_gf99c4ab1f930201e0632f3d2e3267438}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-READY@{MSG\_\-ROOTS\_\-READY}}
+\index{MSG\_\-ROOTS\_\-READY@{MSG\_\-ROOTS\_\-READY}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-READY]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-READY~\char`\"{}Objeto {\bf RootFindingBase} esta pronto.\char`\"{}}\hfill}
+\label{group____messages_gf99c4ab1f930201e0632f3d2e3267438}
+
+
+
+
+Definition at line 72 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetStateMessage().\hypertarget{group____messages_g9d5756daf9e0e99c65a2b72531a0b765}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR@{MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR}}
+\index{MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR@{MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR~\char`\"{}Erro desconhecido.\char`\"{}}\hfill}
+\label{group____messages_g9d5756daf9e0e99c65a2b72531a0b765}
+
+
+
+
+Definition at line 34 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetErrorMessage(), RootFindingBissecaoGetErrorMessage(), RootFindingCordasGetErrorMessage(), RootFindingNewtonRhapsonGetErrorMessage(), and RootFindingPegasoGetErrorMessage().\hypertarget{group____messages_gf33ab54fcaa61fcc47cb9c5dece317e2}{
+\index{\_\-messages@{\_\-messages}!MSG\_\-ROOTS\_\-UNKNOW\_\-STATE@{MSG\_\-ROOTS\_\-UNKNOW\_\-STATE}}
+\index{MSG\_\-ROOTS\_\-UNKNOW\_\-STATE@{MSG\_\-ROOTS\_\-UNKNOW\_\-STATE}!_messages@{\_\-messages}}
+\paragraph[MSG\_\-ROOTS\_\-UNKNOW\_\-STATE]{\setlength{\rightskip}{0pt plus 5cm}\#define MSG\_\-ROOTS\_\-UNKNOW\_\-STATE~\char`\"{}Estado desconhecido.\char`\"{}}\hfill}
+\label{group____messages_gf33ab54fcaa61fcc47cb9c5dece317e2}
+
+
+
+
+Definition at line 35 of file RootFindingMessages\_\-PT-BR.h.
+
+Referenced by RootFindingBaseGetStateMessage(), RootFindingBissecaoGetStateMessage(), RootFindingCordasGetStateMessage(), RootFindingNewtonRhapsonGetStateMessage(), and RootFindingPegasoGetStateMessage().

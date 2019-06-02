@@ -1,0 +1,285 @@
+\hypertarget{group____cordas}{
+\subsection{Metodo das Cordas}
+\label{group____cordas}\index{Metodo das Cordas@{Metodo das Cordas}}
+}
+\subsubsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structRootFindingCordas}{RootFindingCordas}
+\begin{CompactList}\small\item\em Estrutura de dados para o Metodo das Cordas. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{group____cordas_ga16d78672b3564becdd978dc37001261}{CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS}~100
+\item 
+\#define \hyperlink{group____cordas_g4caa3a434138569b567ffd432d5f12fc}{CORDAS\_\-DEFAULT\_\-TOLERANCE}~1e-7
+\end{CompactItemize}
+\subsubsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct \hyperlink{structRootFindingCordas}{RootFindingCordas} \hyperlink{group____cordas_g64e9f7aa0b38cc4c243e37b277b115d4}{RootFindingCordasT}
+\begin{CompactList}\small\item\em Apelido para struct \hyperlink{structRootFindingCordas}{RootFindingCordas}. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$ \hyperlink{group____cordas_g8e5327982ea6071bc6215f950d808bef}{RootFindingCordasCreate} (\hyperlink{structRootFindingBase}{RootFindingBaseT} $\ast$rootsObj)
+\begin{CompactList}\small\item\em Cria um objeto do tipo struct \hyperlink{structRootFindingCordas}{RootFindingCordas}. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____cordas_g4b4d161deefaec382d2f832af2654580}{RootFindingCordasInit} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Inicializa o objeto \hyperlink{structRootFindingCordas}{RootFindingCordas}. \item\end{CompactList}\item 
+void \hyperlink{group____cordas_g1b42f5cdb8c787c44539b6e0de8d968f}{RootFindingCordasDelete} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$obj)
+\begin{CompactList}\small\item\em Apaga a instancia do objeto \hyperlink{structRootFindingCordas}{RootFindingCordas}. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____cordas_gafc64dac7d95d2756d1259a599789441}{RootFindingCordasPerformIteration} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Realiza a iteracao. \item\end{CompactList}\item 
+int \hyperlink{group____cordas_gcc4b8454f6664e389c484498f42c17d8}{RootFindingCordasGetErrorCode} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem o codigo de erro. \item\end{CompactList}\item 
+int \hyperlink{group____cordas_g67aaf428f922e7d15a7fbd5a4508ffd7}{RootFindingCordasGetStateCode} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem o codigo referente ao estado do objeto. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{group____cordas_g5a6750a998093e1701c8a01ae24e9cc2}{RootFindingCordasGetErrorMessage} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem a mensagem de erro. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{group____cordas_ga065f13f2ec77b2e949190c1aca9ef9d}{RootFindingCordasGetStateMessage} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem a mensagem referente ao estado do objeto. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____cordas_g66931e7adda820b82bb64bc671d7d550}{RootFindingCordasHasError} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Verifica se ha erros. \item\end{CompactList}\item 
+static void \hyperlink{group____cordas_gb608a6128f3fe5d4a10990198b1dac4b}{setError} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj, int errorCode)
+\begin{CompactList}\small\item\em Set error code and change state to CORDAS\_\-ERROR\_\-FOUND. \item\end{CompactList}\item 
+static void \hyperlink{group____cordas_g69e02d4b63567d2bdde44b532d13fcbf}{resetError} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\item 
+static \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{group____cordas_gb05e2f747de939224f70b38852f66c07}{getNextX} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem o valor para o proximo x. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Define Documentation}
+\hypertarget{group____cordas_ga16d78672b3564becdd978dc37001261}{
+\index{\_\-cordas@{\_\-cordas}!CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS@{CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS}}
+\index{CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS@{CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS}!_cordas@{\_\-cordas}}
+\paragraph[CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS]{\setlength{\rightskip}{0pt plus 5cm}\#define CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS~100}\hfill}
+\label{group____cordas_ga16d78672b3564becdd978dc37001261}
+
+
+
+
+Definition at line 38 of file RootFindingCordas.h.
+
+Referenced by RootFindingCordasCreate().\hypertarget{group____cordas_g4caa3a434138569b567ffd432d5f12fc}{
+\index{\_\-cordas@{\_\-cordas}!CORDAS\_\-DEFAULT\_\-TOLERANCE@{CORDAS\_\-DEFAULT\_\-TOLERANCE}}
+\index{CORDAS\_\-DEFAULT\_\-TOLERANCE@{CORDAS\_\-DEFAULT\_\-TOLERANCE}!_cordas@{\_\-cordas}}
+\paragraph[CORDAS\_\-DEFAULT\_\-TOLERANCE]{\setlength{\rightskip}{0pt plus 5cm}\#define CORDAS\_\-DEFAULT\_\-TOLERANCE~1e-7}\hfill}
+\label{group____cordas_g4caa3a434138569b567ffd432d5f12fc}
+
+
+
+
+Definition at line 39 of file RootFindingCordas.h.
+
+Referenced by RootFindingCordasCreate().
+
+\subsubsection{Typedef Documentation}
+\hypertarget{group____cordas_g64e9f7aa0b38cc4c243e37b277b115d4}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasT@{RootFindingCordasT}}
+\index{RootFindingCordasT@{RootFindingCordasT}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasT]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf RootFindingCordas} {\bf RootFindingCordasT}}\hfill}
+\label{group____cordas_g64e9f7aa0b38cc4c243e37b277b115d4}
+
+
+Apelido para struct \hyperlink{structRootFindingCordas}{RootFindingCordas}. 
+
+
+
+Definition at line 84 of file RootFindingCordas.h.
+
+\subsubsection{Function Documentation}
+\hypertarget{group____cordas_gb05e2f747de939224f70b38852f66c07}{
+\index{\_\-cordas@{\_\-cordas}!getNextX@{getNextX}}
+\index{getNextX@{getNextX}!_cordas@{\_\-cordas}}
+\paragraph[getNextX]{\setlength{\rightskip}{0pt plus 5cm}static {\bf RootFindingDoubleT} getNextX ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}\hfill}
+\label{group____cordas_gb05e2f747de939224f70b38852f66c07}
+
+
+Obtem o valor para o proximo x. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cordasObj}]Ponteiro para objeto struct \hyperlink{structRootFindingCordas}{RootFindingCordas} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Valor do proximo x \end{Desc}
+
+
+Definition at line 118 of file RootFindingCordas.c.
+
+References RootFindingCordas::c, RootFindingCordas::fC, RootFindingBase::fX, RootFindingCordas::rootsObj, and RootFindingBase::x.
+
+Referenced by RootFindingCordasPerformIteration(), RootFindingNewtonRhapsonPerformIteration(), and RootFindingPegasoPerformIteration().\hypertarget{group____cordas_g69e02d4b63567d2bdde44b532d13fcbf}{
+\index{\_\-cordas@{\_\-cordas}!resetError@{resetError}}
+\index{resetError@{resetError}!_cordas@{\_\-cordas}}
+\paragraph[resetError]{\setlength{\rightskip}{0pt plus 5cm}static void resetError ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}\hfill}
+\label{group____cordas_g69e02d4b63567d2bdde44b532d13fcbf}
+
+
+
+
+Definition at line 186 of file RootFindingCordas.c.
+
+References RootFindingCordas::errorCode, and RootFindingCordas::state.\hypertarget{group____cordas_g8e5327982ea6071bc6215f950d808bef}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasCreate@{RootFindingCordasCreate}}
+\index{RootFindingCordasCreate@{RootFindingCordasCreate}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasCreate]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingCordasT}$\ast$ RootFindingCordasCreate ({\bf RootFindingBaseT} $\ast$ {\em rootsObj})}\hfill}
+\label{group____cordas_g8e5327982ea6071bc6215f950d808bef}
+
+
+Cria um objeto do tipo struct \hyperlink{structRootFindingCordas}{RootFindingCordas}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rootsObj}]Ponteiro para o objeto do tipo struct \hyperlink{structRootFindingBase}{RootFindingBase} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Ponteiro para o objeto criado \end{Desc}
+
+
+Definition at line 48 of file RootFindingCordas.c.
+
+References CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS, CORDAS\_\-DEFAULT\_\-TOLERANCE, RootFindingCordas::maxIterations, resetError(), RootFindingCordas::rootsObj, RootFindingCordas::state, and RootFindingCordas::tolerance.\hypertarget{group____cordas_g1b42f5cdb8c787c44539b6e0de8d968f}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasDelete@{RootFindingCordasDelete}}
+\index{RootFindingCordasDelete@{RootFindingCordasDelete}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasDelete]{\setlength{\rightskip}{0pt plus 5cm}void RootFindingCordasDelete ({\bf RootFindingCordasT} $\ast$ {\em obj})}\hfill}
+\label{group____cordas_g1b42f5cdb8c787c44539b6e0de8d968f}
+
+
+Apaga a instancia do objeto \hyperlink{structRootFindingCordas}{RootFindingCordas}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em obj}]Ponteiro para o obj \hyperlink{structRootFindingCordas}{RootFindingCordas} \end{description}
+\end{Desc}
+
+
+Definition at line 127 of file RootFindingCordas.c.\hypertarget{group____cordas_gcc4b8454f6664e389c484498f42c17d8}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasGetErrorCode@{RootFindingCordasGetErrorCode}}
+\index{RootFindingCordasGetErrorCode@{RootFindingCordasGetErrorCode}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasGetErrorCode]{\setlength{\rightskip}{0pt plus 5cm}int RootFindingCordasGetErrorCode ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})}\hfill}
+\label{group____cordas_gcc4b8454f6664e389c484498f42c17d8}
+
+
+Obtem o codigo de erro. 
+
+
+
+Definition at line 181 of file RootFindingCordas.c.
+
+References RootFindingCordas::errorCode.\hypertarget{group____cordas_g5a6750a998093e1701c8a01ae24e9cc2}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasGetErrorMessage@{RootFindingCordasGetErrorMessage}}
+\index{RootFindingCordasGetErrorMessage@{RootFindingCordasGetErrorMessage}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasGetErrorMessage]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ RootFindingCordasGetErrorMessage ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})}\hfill}
+\label{group____cordas_g5a6750a998093e1701c8a01ae24e9cc2}
+
+
+Obtem a mensagem de erro. 
+
+
+
+Definition at line 202 of file RootFindingCordas.c.
+
+References RootFindingBase::a, RootFindingBase::b, RootFindingCordas::errorCode, msg, MSG\_\-CORDAS\_\-2NDIFF\_\-TEST\_\-ERROR, MSG\_\-CORDAS\_\-NO\_\-ERROR, MSG\_\-CORDAS\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR, MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR, and RootFindingCordas::rootsObj.\hypertarget{group____cordas_g67aaf428f922e7d15a7fbd5a4508ffd7}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasGetStateCode@{RootFindingCordasGetStateCode}}
+\index{RootFindingCordasGetStateCode@{RootFindingCordasGetStateCode}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasGetStateCode]{\setlength{\rightskip}{0pt plus 5cm}int RootFindingCordasGetStateCode ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})}\hfill}
+\label{group____cordas_g67aaf428f922e7d15a7fbd5a4508ffd7}
+
+
+Obtem o codigo referente ao estado do objeto. 
+
+
+
+Definition at line 195 of file RootFindingCordas.c.
+
+References RootFindingCordas::state.\hypertarget{group____cordas_ga065f13f2ec77b2e949190c1aca9ef9d}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasGetStateMessage@{RootFindingCordasGetStateMessage}}
+\index{RootFindingCordasGetStateMessage@{RootFindingCordasGetStateMessage}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasGetStateMessage]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ RootFindingCordasGetStateMessage ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})}\hfill}
+\label{group____cordas_ga065f13f2ec77b2e949190c1aca9ef9d}
+
+
+Obtem a mensagem referente ao estado do objeto. 
+
+
+
+Definition at line 219 of file RootFindingCordas.c.
+
+References RootFindingBase::e, RootFindingCordas::maxIterations, msg, MSG\_\-CORDAS\_\-APPROXIMANTION\_\-ROOT\_\-FOUND, MSG\_\-CORDAS\_\-ERROR\_\-FOUND, MSG\_\-CORDAS\_\-INITIALIZED, MSG\_\-CORDAS\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED, MSG\_\-CORDAS\_\-NOT\_\-INIT, MSG\_\-ROOTS\_\-UNKNOW\_\-STATE, RootFindingCordas::rootsObj, RootFindingCordas::state, RootFindingCordas::tolerance, and RootFindingBase::x.\hypertarget{group____cordas_g66931e7adda820b82bb64bc671d7d550}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasHasError@{RootFindingCordasHasError}}
+\index{RootFindingCordasHasError@{RootFindingCordasHasError}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasHasError]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBoolT} RootFindingCordasHasError ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})}\hfill}
+\label{group____cordas_g66931e7adda820b82bb64bc671d7d550}
+
+
+Verifica se ha erros. 
+
+\begin{Desc}
+\item[Returns:]TRUE caso haja erro \end{Desc}
+
+
+Definition at line 244 of file RootFindingCordas.c.
+
+References RootFindingCordas::errorCode.\hypertarget{group____cordas_g4b4d161deefaec382d2f832af2654580}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasInit@{RootFindingCordasInit}}
+\index{RootFindingCordasInit@{RootFindingCordasInit}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasInit]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBoolT} RootFindingCordasInit ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})}\hfill}
+\label{group____cordas_g4b4d161deefaec382d2f832af2654580}
+
+
+Inicializa o objeto \hyperlink{structRootFindingCordas}{RootFindingCordas}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cordasObj}]Ponteiro para o objeto a ser inicializado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE em caso de sucesso \end{Desc}
+
+
+Definition at line 64 of file RootFindingCordas.c.
+
+References RootFindingBase::a, RootFindingBase::b, RootFindingCordas::c, RootFindingBase::e, FALSE, RootFindingCordas::fC, RootFindingBase::fX, RootFindingCordas::i, infinity(), resetError(), RootFindingBase2nDiffEval(), RootFindingBaseEval(), RootFindingCordas::rootsObj, setError(), RootFindingCordas::state, TRUE, and RootFindingBase::x.\hypertarget{group____cordas_gafc64dac7d95d2756d1259a599789441}{
+\index{\_\-cordas@{\_\-cordas}!RootFindingCordasPerformIteration@{RootFindingCordasPerformIteration}}
+\index{RootFindingCordasPerformIteration@{RootFindingCordasPerformIteration}!_cordas@{\_\-cordas}}
+\paragraph[RootFindingCordasPerformIteration]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBoolT} RootFindingCordasPerformIteration ({\bf RootFindingCordasT} $\ast$ {\em cordasObj})}\hfill}
+\label{group____cordas_gafc64dac7d95d2756d1259a599789441}
+
+
+Realiza a iteracao. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cordasObj}]Ponteiro para o objeto \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE caso haja mais iteracoes a serem realizadas \end{Desc}
+
+
+Definition at line 138 of file RootFindingCordas.c.
+
+References RootFindingBase::e, FALSE, RootFindingBase::fX, getNextX(), RootFindingCordas::i, isInfOrNan(), RootFindingCordas::maxIterations, RootFindingBaseEval(), RootFindingCordas::rootsObj, setError(), RootFindingCordas::state, RootFindingBase::state, RootFindingCordas::tolerance, TRUE, and RootFindingBase::x.\hypertarget{group____cordas_gb608a6128f3fe5d4a10990198b1dac4b}{
+\index{\_\-cordas@{\_\-cordas}!setError@{setError}}
+\index{setError@{setError}!_cordas@{\_\-cordas}}
+\paragraph[setError]{\setlength{\rightskip}{0pt plus 5cm}static void setError ({\bf RootFindingCordasT} $\ast$ {\em cordasObj}, \/  int {\em errorCode})\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}\hfill}
+\label{group____cordas_gb608a6128f3fe5d4a10990198b1dac4b}
+
+
+Set error code and change state to CORDAS\_\-ERROR\_\-FOUND. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cordasObj}]Ponteiro para objeto RootFindingCordasT \item[{\em errorCode}]Codigo de erro \end{description}
+\end{Desc}
+
+
+Definition at line 132 of file RootFindingCordas.c.
+
+References RootFindingCordas::errorCode, and RootFindingCordas::state.

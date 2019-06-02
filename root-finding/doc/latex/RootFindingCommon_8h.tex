@@ -1,0 +1,190 @@
+\hypertarget{RootFindingCommon_8h}{
+\subsection{include/RootFindingCommon.h File Reference}
+\label{RootFindingCommon_8h}\index{include/RootFindingCommon.h@{include/RootFindingCommon.h}}
+}
+/root-finding/include/RootFindingCommon.h 
+
+{\tt \#include $<$muParserDLL.h$>$}\par
+\subsubsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{RootFindingCommon_8h_a8cecfc5c5c054d2875c03e77b7be15d}{TRUE}~1
+\item 
+\#define \hyperlink{RootFindingCommon_8h_a93f0eb578d23995850d61f7d61c55c1}{FALSE}~0
+\end{CompactItemize}
+\subsubsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef double \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT}
+\item 
+typedef int \hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT}
+\end{CompactItemize}
+\subsubsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{RootFindingCommon_8h_76a682bfff8a85e4c26013247db1b0ab}{getAxisVarPtr} (muParserHandle\_\-t mupObj, const char $\ast$axis, \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} $\ast$$\ast$varPtr)
+\begin{CompactList}\small\item\em Obtem o endereco para a variavel do eixo onde deve-se. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{RootFindingCommon_8h_977a6bd4f033997ff5d5408c9ecf3ec9}{Mup2ndDiff} (muParserHandle\_\-t mupObj, \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} $\ast$varPtr)
+\begin{CompactList}\small\item\em Aproximacao da segunda diferencial no ponto utilizando \char`\"{}Finite difference\char`\"{}. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{RootFindingCommon_8h_3d3296b37f9383ae7b5257b5523e0d43}{MupDiff} (muParserHandle\_\-t mupObj, \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} $\ast$varPtr)
+\begin{CompactList}\small\item\em Aproximacao da diferencial no ponto utilizando \char`\"{}regard to a variable\char`\"{} O codigo foi adaptado para C c/ base no metodo Diff da classe muParser (C++), infelizmente a API para C do muParser nao disbonibiliza o metodo Diff. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{RootFindingCommon_8h_d90aee6760bcf8fbfd5dbc3b52934e70}{infinity} ()
+\begin{CompactList}\small\item\em Obtem o valor infinito. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{RootFindingCommon_8h_92bc6cb79bbeafa779507dd6384b6ff6}{isInfOrNan} (\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} num)
+\begin{CompactList}\small\item\em Verifica se um dado numero \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} eh infinito ou \char`\"{}Not a Number\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Detailed Description}
+/root-finding/include/RootFindingCommon.h 
+
+\begin{Desc}
+\item[Date:]25/03/2010 \end{Desc}
+\begin{Desc}
+\item[Author:]Matheus Neder $<$\href{mailto:matheusneder@gmail.com}{\tt matheusneder@gmail.com}$>$ \end{Desc}
+
+
+Definition in file \hyperlink{RootFindingCommon_8h-source}{RootFindingCommon.h}.
+
+\subsubsection{Define Documentation}
+\hypertarget{RootFindingCommon_8h_a93f0eb578d23995850d61f7d61c55c1}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!FALSE@{FALSE}}
+\index{FALSE@{FALSE}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[FALSE]{\setlength{\rightskip}{0pt plus 5cm}\#define FALSE~0}\hfill}
+\label{RootFindingCommon_8h_a93f0eb578d23995850d61f7d61c55c1}
+
+
+
+
+Definition at line 39 of file RootFindingCommon.h.
+
+Referenced by getAxisVarPtr(), RootFindingBaseSetRange(), RootFindingBissecaoPerformIteration(), RootFindingCordasInit(), RootFindingCordasPerformIteration(), RootFindingNewtonRhapsonInit(), RootFindingNewtonRhapsonPerformIteration(), and RootFindingPegasoPerformIteration().\hypertarget{RootFindingCommon_8h_a8cecfc5c5c054d2875c03e77b7be15d}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!TRUE@{TRUE}}
+\index{TRUE@{TRUE}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[TRUE]{\setlength{\rightskip}{0pt plus 5cm}\#define TRUE~1}\hfill}
+\label{RootFindingCommon_8h_a8cecfc5c5c054d2875c03e77b7be15d}
+
+
+
+
+Definition at line 36 of file RootFindingCommon.h.
+
+Referenced by getAxisVarPtr(), RootFindingBaseSetRange(), RootFindingBissecaoInit(), RootFindingBissecaoPerformIteration(), RootFindingCordasInit(), RootFindingCordasPerformIteration(), RootFindingNewtonRhapsonInit(), RootFindingNewtonRhapsonPerformIteration(), RootFindingPegasoInit(), and RootFindingPegasoPerformIteration().
+
+\subsubsection{Typedef Documentation}
+\hypertarget{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!RootFindingBoolT@{RootFindingBoolT}}
+\index{RootFindingBoolT@{RootFindingBoolT}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[RootFindingBoolT]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf RootFindingBoolT}}\hfill}
+\label{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}
+
+
+
+
+Definition at line 33 of file RootFindingCommon.h.\hypertarget{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!RootFindingDoubleT@{RootFindingDoubleT}}
+\index{RootFindingDoubleT@{RootFindingDoubleT}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[RootFindingDoubleT]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf RootFindingDoubleT}}\hfill}
+\label{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}
+
+
+
+
+Definition at line 31 of file RootFindingCommon.h.
+
+\subsubsection{Function Documentation}
+\hypertarget{RootFindingCommon_8h_76a682bfff8a85e4c26013247db1b0ab}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!getAxisVarPtr@{getAxisVarPtr}}
+\index{getAxisVarPtr@{getAxisVarPtr}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[getAxisVarPtr]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBoolT} getAxisVarPtr (muParserHandle\_\-t {\em mupObj}, \/  const char $\ast$ {\em axis}, \/  {\bf RootFindingDoubleT} $\ast$$\ast$ {\em varPtr})}\hfill}
+\label{RootFindingCommon_8h_76a682bfff8a85e4c26013247db1b0ab}
+
+
+Obtem o endereco para a variavel do eixo onde deve-se. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mupObj}]Ponteiro para objeto muParser contendo a expressao \item[{\em axis}]Eixo em qual a raiz deve ser procurada \item[\mbox{$\rightarrow$} {\em varPtr}]Ponteiro para onde o endereco deve ser atribuido \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE em caso de sucesso FALSE em caso de falha \end{Desc}
+
+
+Definition at line 30 of file RootFindingCommon.c.
+
+References FALSE, RootFindingPegaso::i, and TRUE.\hypertarget{RootFindingCommon_8h_d90aee6760bcf8fbfd5dbc3b52934e70}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!infinity@{infinity}}
+\index{infinity@{infinity}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[infinity]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} infinity ()}\hfill}
+\label{RootFindingCommon_8h_d90aee6760bcf8fbfd5dbc3b52934e70}
+
+
+Obtem o valor infinito. 
+
+\begin{Desc}
+\item[Returns:]inf \end{Desc}
+
+
+Definition at line 55 of file RootFindingCommon.c.
+
+Referenced by RootFindingBaseReset(), RootFindingBissecaoInit(), RootFindingCordasInit(), and RootFindingNewtonRhapsonInit().\hypertarget{RootFindingCommon_8h_92bc6cb79bbeafa779507dd6384b6ff6}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!isInfOrNan@{isInfOrNan}}
+\index{isInfOrNan@{isInfOrNan}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[isInfOrNan]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBoolT} isInfOrNan ({\bf RootFindingDoubleT} {\em num})}\hfill}
+\label{RootFindingCommon_8h_92bc6cb79bbeafa779507dd6384b6ff6}
+
+
+Verifica se um dado numero \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} eh infinito ou \char`\"{}Not a Number\char`\"{}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em num}]Numero a verificado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE se isinf(num) ou isnan(num) \end{Desc}
+
+
+Definition at line 97 of file RootFindingCommon.c.
+
+Referenced by RootFindingBissecaoPerformIteration(), RootFindingCordasPerformIteration(), RootFindingNewtonRhapsonPerformIteration(), and RootFindingPegasoPerformIteration().\hypertarget{RootFindingCommon_8h_977a6bd4f033997ff5d5408c9ecf3ec9}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!Mup2ndDiff@{Mup2ndDiff}}
+\index{Mup2ndDiff@{Mup2ndDiff}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[Mup2ndDiff]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} Mup2ndDiff (muParserHandle\_\-t {\em mupObj}, \/  {\bf RootFindingDoubleT} $\ast$ {\em varPtr})}\hfill}
+\label{RootFindingCommon_8h_977a6bd4f033997ff5d5408c9ecf3ec9}
+
+
+Aproximacao da segunda diferencial no ponto utilizando \char`\"{}Finite difference\char`\"{}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mupObj}]Objeto muParser (ponteiro) \item[{\em varPtr}]Ponteiro para a variavel relacionada a expressao no objeto muParser referente a qual variavel deve ser diferenciado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Valor da segunda diferencial no ponto \end{Desc}
+
+
+Definition at line 61 of file RootFindingCommon.c.
+
+Referenced by RootFindingBase2nDiffEval().\hypertarget{RootFindingCommon_8h_3d3296b37f9383ae7b5257b5523e0d43}{
+\index{RootFindingCommon.h@{RootFindingCommon.h}!MupDiff@{MupDiff}}
+\index{MupDiff@{MupDiff}!RootFindingCommon.h@{RootFindingCommon.h}}
+\paragraph[MupDiff]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} MupDiff (muParserHandle\_\-t {\em mupObj}, \/  {\bf RootFindingDoubleT} $\ast$ {\em varPtr})}\hfill}
+\label{RootFindingCommon_8h_3d3296b37f9383ae7b5257b5523e0d43}
+
+
+Aproximacao da diferencial no ponto utilizando \char`\"{}regard to a variable\char`\"{} O codigo foi adaptado para C c/ base no metodo Diff da classe muParser (C++), infelizmente a API para C do muParser nao disbonibiliza o metodo Diff. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mupObj}]Objeto muParser (ponteiro) \item[{\em varPtr}]Ponteiro para a variavel relacionada a expressao no objeto muParser referente a qual variavel deve ser diferenciado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Valor da diferencial no ponto \end{Desc}
+
+
+Definition at line 77 of file RootFindingCommon.c.
+
+Referenced by RootFindingBaseDiffEval().

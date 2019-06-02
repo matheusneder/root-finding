@@ -1,0 +1,283 @@
+\hypertarget{group____pegaso}{
+\subsection{Metodo de Pegaso}
+\label{group____pegaso}\index{Metodo de Pegaso@{Metodo de Pegaso}}
+}
+\subsubsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structRootFindingPegaso}{RootFindingPegaso}
+\begin{CompactList}\small\item\em Estrutura de dados para o Metodo de Pegaso. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{group____pegaso_gd5756b72d3091ff42470aa73e96b70df}{PEGASO\_\-DEFAULT\_\-MAX\_\-ITERATIONS}~100
+\item 
+\#define \hyperlink{group____pegaso_gfb0e1657b5a35c9f071c5bd67a29263d}{PEGASO\_\-DEFAULT\_\-TOLERANCE}~1e-7
+\end{CompactItemize}
+\subsubsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct \hyperlink{structRootFindingPegaso}{RootFindingPegaso} \hyperlink{group____pegaso_gd48e82d0f19968cca8a006303b6775ee}{RootFindingPegasoT}
+\begin{CompactList}\small\item\em Apelido para struct \hyperlink{structRootFindingPegaso}{RootFindingPegaso}. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$ \hyperlink{group____pegaso_g1717ab621ccdb5d78bc3133ad52805c2}{RootFindingPegasoCreate} (\hyperlink{structRootFindingBase}{RootFindingBaseT} $\ast$rootsObj)
+\begin{CompactList}\small\item\em Cria um objeto do tipo struct \hyperlink{structRootFindingPegaso}{RootFindingPegaso}. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____pegaso_gf4d7f58905c8f5ed3ed3feb77c71b7cc}{RootFindingPegasoInit} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\begin{CompactList}\small\item\em Inicializa o objeto \hyperlink{structRootFindingPegaso}{RootFindingPegaso}. \item\end{CompactList}\item 
+void \hyperlink{group____pegaso_gea8cce31a68dcb1d7b2aa3e48d114366}{RootFindingPegasoDelete} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$obj)
+\begin{CompactList}\small\item\em Apaga a instancia do objeto \hyperlink{structRootFindingPegaso}{RootFindingPegaso}. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____pegaso_g983282553d9cd96ebd2155b5f939aada}{RootFindingPegasoPerformIteration} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\begin{CompactList}\small\item\em Realiza a iteracao. \item\end{CompactList}\item 
+int \hyperlink{group____pegaso_g6b27d39dab4f225185c07eb6fbb22ff9}{RootFindingPegasoGetErrorCode} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\begin{CompactList}\small\item\em Obtem o codigo de erro. \item\end{CompactList}\item 
+int \hyperlink{group____pegaso_g83892750b865aa977fcdba83922ad6fb}{RootFindingPegasoGetStateCode} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\begin{CompactList}\small\item\em Obtem o codigo referente ao estado do objeto. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{group____pegaso_g4d0abd516b71e0462de1b22ce896b87a}{RootFindingPegasoGetErrorMessage} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\begin{CompactList}\small\item\em Obtem a mensagem de erro. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{group____pegaso_g2328683ae067772b11e3127fe800448d}{RootFindingPegasoGetStateMessage} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\begin{CompactList}\small\item\em Obtem a mensagem referente ao estado do objeto. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____pegaso_g3159b35cddebb0bdc99b85199fbc847f}{RootFindingPegasoHasError} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\begin{CompactList}\small\item\em Verifica se ha erros. \item\end{CompactList}\item 
+static void \hyperlink{group____pegaso_g755ddb4e92d010ac22e88d32e7fcec6f}{setError} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj, int errorCode)
+\begin{CompactList}\small\item\em Set error code and change state to PEGASO\_\-ERROR\_\-FOUND. \item\end{CompactList}\item 
+static void \hyperlink{group____pegaso_g0496f8f88be7280598d9cce2a1e622f0}{resetError} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\item 
+static \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{group____pegaso_gc404fd69441e2b99f44b18fe14d4fc48}{getNextX} (\hyperlink{structRootFindingPegaso}{RootFindingPegasoT} $\ast$pegasoObj)
+\begin{CompactList}\small\item\em Obtem o valor para o proximo x. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Define Documentation}
+\hypertarget{group____pegaso_gd5756b72d3091ff42470aa73e96b70df}{
+\index{\_\-pegaso@{\_\-pegaso}!PEGASO\_\-DEFAULT\_\-MAX\_\-ITERATIONS@{PEGASO\_\-DEFAULT\_\-MAX\_\-ITERATIONS}}
+\index{PEGASO\_\-DEFAULT\_\-MAX\_\-ITERATIONS@{PEGASO\_\-DEFAULT\_\-MAX\_\-ITERATIONS}!_pegaso@{\_\-pegaso}}
+\paragraph[PEGASO\_\-DEFAULT\_\-MAX\_\-ITERATIONS]{\setlength{\rightskip}{0pt plus 5cm}\#define PEGASO\_\-DEFAULT\_\-MAX\_\-ITERATIONS~100}\hfill}
+\label{group____pegaso_gd5756b72d3091ff42470aa73e96b70df}
+
+
+
+
+Definition at line 38 of file RootFindingPegaso.h.
+
+Referenced by RootFindingPegasoCreate().\hypertarget{group____pegaso_gfb0e1657b5a35c9f071c5bd67a29263d}{
+\index{\_\-pegaso@{\_\-pegaso}!PEGASO\_\-DEFAULT\_\-TOLERANCE@{PEGASO\_\-DEFAULT\_\-TOLERANCE}}
+\index{PEGASO\_\-DEFAULT\_\-TOLERANCE@{PEGASO\_\-DEFAULT\_\-TOLERANCE}!_pegaso@{\_\-pegaso}}
+\paragraph[PEGASO\_\-DEFAULT\_\-TOLERANCE]{\setlength{\rightskip}{0pt plus 5cm}\#define PEGASO\_\-DEFAULT\_\-TOLERANCE~1e-7}\hfill}
+\label{group____pegaso_gfb0e1657b5a35c9f071c5bd67a29263d}
+
+
+
+
+Definition at line 39 of file RootFindingPegaso.h.
+
+Referenced by RootFindingPegasoCreate().
+
+\subsubsection{Typedef Documentation}
+\hypertarget{group____pegaso_gd48e82d0f19968cca8a006303b6775ee}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoT@{RootFindingPegasoT}}
+\index{RootFindingPegasoT@{RootFindingPegasoT}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoT]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf RootFindingPegaso} {\bf RootFindingPegasoT}}\hfill}
+\label{group____pegaso_gd48e82d0f19968cca8a006303b6775ee}
+
+
+Apelido para struct \hyperlink{structRootFindingPegaso}{RootFindingPegaso}. 
+
+
+
+Definition at line 84 of file RootFindingPegaso.h.
+
+\subsubsection{Function Documentation}
+\hypertarget{group____pegaso_gc404fd69441e2b99f44b18fe14d4fc48}{
+\index{\_\-pegaso@{\_\-pegaso}!getNextX@{getNextX}}
+\index{getNextX@{getNextX}!_pegaso@{\_\-pegaso}}
+\paragraph[getNextX]{\setlength{\rightskip}{0pt plus 5cm}static {\bf RootFindingDoubleT} getNextX ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}\hfill}
+\label{group____pegaso_gc404fd69441e2b99f44b18fe14d4fc48}
+
+
+Obtem o valor para o proximo x. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pegasoObj}]Ponteiro para objeto struct \hyperlink{structRootFindingPegaso}{RootFindingPegaso} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Valor do proximo x \end{Desc}
+
+
+Definition at line 93 of file RootFindingPegaso.c.
+
+References RootFindingPegaso::fPrevXi, RootFindingBase::fX, RootFindingPegaso::prevXi, RootFindingPegaso::rootsObj, and RootFindingBase::x.\hypertarget{group____pegaso_g0496f8f88be7280598d9cce2a1e622f0}{
+\index{\_\-pegaso@{\_\-pegaso}!resetError@{resetError}}
+\index{resetError@{resetError}!_pegaso@{\_\-pegaso}}
+\paragraph[resetError]{\setlength{\rightskip}{0pt plus 5cm}static void resetError ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}\hfill}
+\label{group____pegaso_g0496f8f88be7280598d9cce2a1e622f0}
+
+
+
+
+Definition at line 159 of file RootFindingPegaso.c.
+
+References RootFindingPegaso::errorCode, RootFindingPegaso::PEGASO\_\-ERROR\_\-FOUND, RootFindingPegaso::PEGASO\_\-NO\_\-ERROR, RootFindingPegaso::PEGASO\_\-NOT\_\-INIT, and RootFindingPegaso::state.\hypertarget{group____pegaso_g1717ab621ccdb5d78bc3133ad52805c2}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoCreate@{RootFindingPegasoCreate}}
+\index{RootFindingPegasoCreate@{RootFindingPegasoCreate}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoCreate]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingPegasoT}$\ast$ RootFindingPegasoCreate ({\bf RootFindingBaseT} $\ast$ {\em rootsObj})}\hfill}
+\label{group____pegaso_g1717ab621ccdb5d78bc3133ad52805c2}
+
+
+Cria um objeto do tipo struct \hyperlink{structRootFindingPegaso}{RootFindingPegaso}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rootsObj}]Ponteiro para o objeto do tipo struct \hyperlink{structRootFindingBase}{RootFindingBase} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Ponteiro para o objeto criado \end{Desc}
+
+
+Definition at line 47 of file RootFindingPegaso.c.
+
+References RootFindingPegaso::maxIterations, PEGASO\_\-DEFAULT\_\-MAX\_\-ITERATIONS, PEGASO\_\-DEFAULT\_\-TOLERANCE, RootFindingPegaso::PEGASO\_\-NOT\_\-INIT, resetError(), RootFindingPegaso::rootsObj, RootFindingPegaso::state, and RootFindingPegaso::tolerance.\hypertarget{group____pegaso_gea8cce31a68dcb1d7b2aa3e48d114366}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoDelete@{RootFindingPegasoDelete}}
+\index{RootFindingPegasoDelete@{RootFindingPegasoDelete}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoDelete]{\setlength{\rightskip}{0pt plus 5cm}void RootFindingPegasoDelete ({\bf RootFindingPegasoT} $\ast$ {\em obj})}\hfill}
+\label{group____pegaso_gea8cce31a68dcb1d7b2aa3e48d114366}
+
+
+Apaga a instancia do objeto \hyperlink{structRootFindingPegaso}{RootFindingPegaso}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em obj}]Ponteiro para o obj \hyperlink{structRootFindingPegaso}{RootFindingPegaso} \end{description}
+\end{Desc}
+
+
+Definition at line 81 of file RootFindingPegaso.c.\hypertarget{group____pegaso_g6b27d39dab4f225185c07eb6fbb22ff9}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoGetErrorCode@{RootFindingPegasoGetErrorCode}}
+\index{RootFindingPegasoGetErrorCode@{RootFindingPegasoGetErrorCode}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoGetErrorCode]{\setlength{\rightskip}{0pt plus 5cm}int RootFindingPegasoGetErrorCode ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})}\hfill}
+\label{group____pegaso_g6b27d39dab4f225185c07eb6fbb22ff9}
+
+
+Obtem o codigo de erro. 
+
+
+
+Definition at line 154 of file RootFindingPegaso.c.
+
+References RootFindingPegaso::errorCode.\hypertarget{group____pegaso_g4d0abd516b71e0462de1b22ce896b87a}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoGetErrorMessage@{RootFindingPegasoGetErrorMessage}}
+\index{RootFindingPegasoGetErrorMessage@{RootFindingPegasoGetErrorMessage}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoGetErrorMessage]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ RootFindingPegasoGetErrorMessage ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})}\hfill}
+\label{group____pegaso_g4d0abd516b71e0462de1b22ce896b87a}
+
+
+Obtem a mensagem de erro. 
+
+
+
+Definition at line 175 of file RootFindingPegaso.c.
+
+References RootFindingPegaso::errorCode, MSG\_\-PEGASO\_\-NO\_\-ERROR, MSG\_\-PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR, MSG\_\-ROOTS\_\-UNKNOW\_\-ERROR, RootFindingPegaso::PEGASO\_\-NO\_\-ERROR, and RootFindingPegaso::PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR.\hypertarget{group____pegaso_g83892750b865aa977fcdba83922ad6fb}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoGetStateCode@{RootFindingPegasoGetStateCode}}
+\index{RootFindingPegasoGetStateCode@{RootFindingPegasoGetStateCode}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoGetStateCode]{\setlength{\rightskip}{0pt plus 5cm}int RootFindingPegasoGetStateCode ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})}\hfill}
+\label{group____pegaso_g83892750b865aa977fcdba83922ad6fb}
+
+
+Obtem o codigo referente ao estado do objeto. 
+
+
+
+Definition at line 168 of file RootFindingPegaso.c.
+
+References RootFindingPegaso::state.\hypertarget{group____pegaso_g2328683ae067772b11e3127fe800448d}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoGetStateMessage@{RootFindingPegasoGetStateMessage}}
+\index{RootFindingPegasoGetStateMessage@{RootFindingPegasoGetStateMessage}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoGetStateMessage]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ RootFindingPegasoGetStateMessage ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})}\hfill}
+\label{group____pegaso_g2328683ae067772b11e3127fe800448d}
+
+
+Obtem a mensagem referente ao estado do objeto. 
+
+
+
+Definition at line 188 of file RootFindingPegaso.c.
+
+References RootFindingBase::e, RootFindingPegaso::maxIterations, msg, MSG\_\-PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND, MSG\_\-PEGASO\_\-ERROR\_\-FOUND, MSG\_\-PEGASO\_\-INITIALIZED, MSG\_\-PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED, MSG\_\-PEGASO\_\-NOT\_\-INIT, MSG\_\-ROOTS\_\-UNKNOW\_\-STATE, RootFindingPegaso::PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND, RootFindingPegaso::PEGASO\_\-ERROR\_\-FOUND, RootFindingPegaso::PEGASO\_\-INITIALIZED, RootFindingPegaso::PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED, RootFindingPegaso::PEGASO\_\-NOT\_\-INIT, RootFindingPegaso::rootsObj, RootFindingPegaso::state, RootFindingPegaso::tolerance, and RootFindingBase::x.\hypertarget{group____pegaso_g3159b35cddebb0bdc99b85199fbc847f}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoHasError@{RootFindingPegasoHasError}}
+\index{RootFindingPegasoHasError@{RootFindingPegasoHasError}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoHasError]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBoolT} RootFindingPegasoHasError ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})}\hfill}
+\label{group____pegaso_g3159b35cddebb0bdc99b85199fbc847f}
+
+
+Verifica se ha erros. 
+
+\begin{Desc}
+\item[Returns:]TRUE caso haja erro \end{Desc}
+
+
+Definition at line 213 of file RootFindingPegaso.c.
+
+References RootFindingPegaso::errorCode, and RootFindingPegaso::PEGASO\_\-NO\_\-ERROR.\hypertarget{group____pegaso_gf4d7f58905c8f5ed3ed3feb77c71b7cc}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoInit@{RootFindingPegasoInit}}
+\index{RootFindingPegasoInit@{RootFindingPegasoInit}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoInit]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBoolT} RootFindingPegasoInit ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})}\hfill}
+\label{group____pegaso_gf4d7f58905c8f5ed3ed3feb77c71b7cc}
+
+
+Inicializa o objeto \hyperlink{structRootFindingPegaso}{RootFindingPegaso}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pegasoObj}]Ponteiro para o objeto a ser inicializado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE em caso de sucesso \end{Desc}
+
+
+Definition at line 63 of file RootFindingPegaso.c.
+
+References RootFindingBase::a, RootFindingBase::b, RootFindingBase::e, RootFindingPegaso::fPrevXi, RootFindingBase::fX, RootFindingPegaso::i, RootFindingPegaso::PEGASO\_\-INITIALIZED, RootFindingPegaso::prevXi, resetError(), RootFindingBaseEval(), RootFindingPegaso::rootsObj, RootFindingPegaso::state, TRUE, and RootFindingBase::x.\hypertarget{group____pegaso_g983282553d9cd96ebd2155b5f939aada}{
+\index{\_\-pegaso@{\_\-pegaso}!RootFindingPegasoPerformIteration@{RootFindingPegasoPerformIteration}}
+\index{RootFindingPegasoPerformIteration@{RootFindingPegasoPerformIteration}!_pegaso@{\_\-pegaso}}
+\paragraph[RootFindingPegasoPerformIteration]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingBoolT} RootFindingPegasoPerformIteration ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj})}\hfill}
+\label{group____pegaso_g983282553d9cd96ebd2155b5f939aada}
+
+
+Realiza a iteracao. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pegasoObj}]Ponteiro para o objeto \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE caso haja mais iteracoes a serem realizadas \end{Desc}
+
+
+Definition at line 108 of file RootFindingPegaso.c.
+
+References RootFindingBase::e, FALSE, RootFindingPegaso::fPrevXi, RootFindingBase::fX, getNextX(), RootFindingPegaso::i, isInfOrNan(), RootFindingPegaso::maxIterations, RootFindingPegaso::PEGASO\_\-APPROXIMANTION\_\-ROOT\_\-FOUND, RootFindingPegaso::PEGASO\_\-MAX\_\-ITERATIONS\_\-LIMIT\_\-REACHED, RootFindingPegaso::PEGASO\_\-X\_\-ISINF\_\-OR\_\-ISNAN\_\-ERROR, RootFindingPegaso::prevXi, RootFindingBaseEval(), RootFindingPegaso::rootsObj, setError(), RootFindingPegaso::state, RootFindingBase::state, RootFindingPegaso::tolerance, TRUE, and RootFindingBase::x.\hypertarget{group____pegaso_g755ddb4e92d010ac22e88d32e7fcec6f}{
+\index{\_\-pegaso@{\_\-pegaso}!setError@{setError}}
+\index{setError@{setError}!_pegaso@{\_\-pegaso}}
+\paragraph[setError]{\setlength{\rightskip}{0pt plus 5cm}static void setError ({\bf RootFindingPegasoT} $\ast$ {\em pegasoObj}, \/  int {\em errorCode})\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}\hfill}
+\label{group____pegaso_g755ddb4e92d010ac22e88d32e7fcec6f}
+
+
+Set error code and change state to PEGASO\_\-ERROR\_\-FOUND. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pegasoObj}]Ponteiro para objeto RootFindingPegasoT \item[{\em errorCode}]Codigo de erro \end{description}
+\end{Desc}
+
+
+Definition at line 102 of file RootFindingPegaso.c.
+
+References RootFindingPegaso::errorCode, RootFindingPegaso::PEGASO\_\-ERROR\_\-FOUND, and RootFindingPegaso::state.

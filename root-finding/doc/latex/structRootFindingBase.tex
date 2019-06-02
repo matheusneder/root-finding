@@ -1,0 +1,229 @@
+\hypertarget{structRootFindingBase}{
+\subsection{RootFindingBase Struct Reference}
+\label{structRootFindingBase}\index{RootFindingBase@{RootFindingBase}}
+}
+Estrutura de dados para \hyperlink{structRootFindingBase}{RootFindingBase}.  
+
+
+{\tt \#include $<$RootFindingBase.h$>$}
+
+\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \par
+\hyperlink{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ae0a49ccd8f86d5ba660590eae672a0a1}{ROOTS\_\-NO\_\-ERROR} =  0, 
+\hyperlink{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1a10b44efaa5251542d233614ba384561e}{ROOTS\_\-MUP\_\-EVAL\_\-ERROR}, 
+\hyperlink{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ad98fe152da7c104c998d99f6a3799f9e}{RANGE\_\-ERRORS\_\-START}, 
+\hyperlink{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ab0d840d6f480a358b7628ec252ade964}{ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0}, 
+\par
+\hyperlink{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1a9b12d4346a0a0e6a2770fa91ebbb2095}{ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY}, 
+\hyperlink{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1aa0557e4a6d95a4ba4414dea6967caebd}{RANGE\_\-ERRORS\_\-END}
+ \}
+\begin{CompactList}\small\item\em Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____roots_gbcf354e731e02c63652af3a2058e739d}{RootFindingBaseGetErrorCode} e \hyperlink{group____roots_gcc5a0a8948e4b02a878f8d534c0bc982}{RootFindingBaseGetErrorMessage}. \item\end{CompactList}\item 
+enum \{ \hyperlink{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cbac10c8228ba8207380fb90936d0371e4}{ROOTS\_\-RANGE\_\-NOT\_\-SET} =  0, 
+\hyperlink{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cb252d7f65cbfc99cbdf016eeb55ded073}{ROOTS\_\-READY}, 
+\hyperlink{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cb186b76e2c569fc28eef4c744c7254a72}{ROOTS\_\-EXACT\_\-ROOT\_\-FOUND}
+ \}
+\begin{CompactList}\small\item\em Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____roots_g1712b9a29b6e6b15df2195319d5f5d70}{RootFindingBaseGetStateCode} e \hyperlink{group____roots_ga2434bfeb9592ff54df8601cd1a9a04d}{RootFindingBaseGetStateMessage}. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingBase_f00e92335d8038772634fe2ecd4d9a5a}{a}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingBase_c93fa64c78603a4d15443dfe470d7ff7}{b}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingBase_0397226e2f7f9f37462275742ec280a3}{x}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingBase_220ad9f8e9d2424d8885675caf38e4da}{fX}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{structRootFindingBase_5a4a111c9250303d6eb8dc8d29f7c00f}{e}
+\item 
+muParserHandle\_\-t \hyperlink{structRootFindingBase_e77677949a256721d17168efa25e3849}{mupObj}
+\item 
+\hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} $\ast$ \hyperlink{structRootFindingBase_148f62857539ad7baada5c292782aabf}{varPtr}
+\item 
+enum RootFindingBase:: \{ ... \}  \hyperlink{structRootFindingBase_13f6ee23dba551f211ec37015f58c402}{errorCode}
+\begin{CompactList}\small\item\em Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____roots_gbcf354e731e02c63652af3a2058e739d}{RootFindingBaseGetErrorCode} e \hyperlink{group____roots_gcc5a0a8948e4b02a878f8d534c0bc982}{RootFindingBaseGetErrorMessage}. \item\end{CompactList}\item 
+enum RootFindingBase:: \{ ... \}  \hyperlink{structRootFindingBase_96362edd623556cf5a0e873c03f72086}{state}
+\begin{CompactList}\small\item\em Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____roots_g1712b9a29b6e6b15df2195319d5f5d70}{RootFindingBaseGetStateCode} e \hyperlink{group____roots_ga2434bfeb9592ff54df8601cd1a9a04d}{RootFindingBaseGetStateMessage}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Detailed Description}
+Estrutura de dados para \hyperlink{structRootFindingBase}{RootFindingBase}. 
+
+Definition at line 39 of file RootFindingBase.h.
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1a}{
+\paragraph["@0]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1a}
+
+
+Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____roots_gbcf354e731e02c63652af3a2058e739d}{RootFindingBaseGetErrorCode} e \hyperlink{group____roots_gcc5a0a8948e4b02a878f8d534c0bc982}{RootFindingBaseGetErrorMessage}. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ROOTS\_\-NO\_\-ERROR@{ROOTS\_\-NO\_\-ERROR}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!ROOTS\_\-NO\_\-ERROR@{ROOTS\_\-NO\_\-ERROR}}\item[{\em 
+\hypertarget{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ae0a49ccd8f86d5ba660590eae672a0a1}{
+ROOTS\_\-NO\_\-ERROR}
+\label{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ae0a49ccd8f86d5ba660590eae672a0a1}
+}]\index{ROOTS\_\-MUP\_\-EVAL\_\-ERROR@{ROOTS\_\-MUP\_\-EVAL\_\-ERROR}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!ROOTS\_\-MUP\_\-EVAL\_\-ERROR@{ROOTS\_\-MUP\_\-EVAL\_\-ERROR}}\item[{\em 
+\hypertarget{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1a10b44efaa5251542d233614ba384561e}{
+ROOTS\_\-MUP\_\-EVAL\_\-ERROR}
+\label{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1a10b44efaa5251542d233614ba384561e}
+}]\index{RANGE\_\-ERRORS\_\-START@{RANGE\_\-ERRORS\_\-START}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!RANGE\_\-ERRORS\_\-START@{RANGE\_\-ERRORS\_\-START}}\item[{\em 
+\hypertarget{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ad98fe152da7c104c998d99f6a3799f9e}{
+RANGE\_\-ERRORS\_\-START}
+\label{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ad98fe152da7c104c998d99f6a3799f9e}
+}]\index{ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0@{ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0@{ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0}}\item[{\em 
+\hypertarget{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ab0d840d6f480a358b7628ec252ade964}{
+ROOTS\_\-RANGE\_\-ERROR\_\-PROD\_\-FA\_\-FB\_\-NOT\_\-LT\_\-0}
+\label{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1ab0d840d6f480a358b7628ec252ade964}
+}]\index{ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY@{ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY@{ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY}}\item[{\em 
+\hypertarget{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1a9b12d4346a0a0e6a2770fa91ebbb2095}{
+ROOTS\_\-RANGE\_\-ERROR\_\-FA\_\-OR\_\-FB\_\-ISINFINITY}
+\label{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1a9b12d4346a0a0e6a2770fa91ebbb2095}
+}]\index{RANGE\_\-ERRORS\_\-END@{RANGE\_\-ERRORS\_\-END}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!RANGE\_\-ERRORS\_\-END@{RANGE\_\-ERRORS\_\-END}}\item[{\em 
+\hypertarget{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1aa0557e4a6d95a4ba4414dea6967caebd}{
+RANGE\_\-ERRORS\_\-END}
+\label{structRootFindingBase_63c3383c7a423657e53c74135d7fcc1aa0557e4a6d95a4ba4414dea6967caebd}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 53 of file RootFindingBase.h.\hypertarget{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cb}{
+\paragraph["@1]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cb}
+
+
+Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____roots_g1712b9a29b6e6b15df2195319d5f5d70}{RootFindingBaseGetStateCode} e \hyperlink{group____roots_ga2434bfeb9592ff54df8601cd1a9a04d}{RootFindingBaseGetStateMessage}. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ROOTS\_\-RANGE\_\-NOT\_\-SET@{ROOTS\_\-RANGE\_\-NOT\_\-SET}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!ROOTS\_\-RANGE\_\-NOT\_\-SET@{ROOTS\_\-RANGE\_\-NOT\_\-SET}}\item[{\em 
+\hypertarget{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cbac10c8228ba8207380fb90936d0371e4}{
+ROOTS\_\-RANGE\_\-NOT\_\-SET}
+\label{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cbac10c8228ba8207380fb90936d0371e4}
+}]\index{ROOTS\_\-READY@{ROOTS\_\-READY}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!ROOTS\_\-READY@{ROOTS\_\-READY}}\item[{\em 
+\hypertarget{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cb252d7f65cbfc99cbdf016eeb55ded073}{
+ROOTS\_\-READY}
+\label{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cb252d7f65cbfc99cbdf016eeb55ded073}
+}]\index{ROOTS\_\-EXACT\_\-ROOT\_\-FOUND@{ROOTS\_\-EXACT\_\-ROOT\_\-FOUND}!RootFindingBase@{RootFindingBase}}\index{RootFindingBase@{RootFindingBase}!ROOTS\_\-EXACT\_\-ROOT\_\-FOUND@{ROOTS\_\-EXACT\_\-ROOT\_\-FOUND}}\item[{\em 
+\hypertarget{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cb186b76e2c569fc28eef4c744c7254a72}{
+ROOTS\_\-EXACT\_\-ROOT\_\-FOUND}
+\label{structRootFindingBase_4b7656f2b255891252a8139d4e31d5cb186b76e2c569fc28eef4c744c7254a72}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 72 of file RootFindingBase.h.
+
+\subsubsection{Field Documentation}
+\hypertarget{structRootFindingBase_f00e92335d8038772634fe2ecd4d9a5a}{
+\index{RootFindingBase@{RootFindingBase}!a@{a}}
+\index{a@{a}!RootFindingBase@{RootFindingBase}}
+\paragraph[a]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingBase::a}}\hfill}
+\label{structRootFindingBase_f00e92335d8038772634fe2ecd4d9a5a}
+
+
+
+
+Definition at line 41 of file RootFindingBase.h.
+
+Referenced by computeX(), RootFindingBaseGetErrorMessage(), RootFindingBaseSetRange(), RootFindingBissecaoFindNewRange(), RootFindingCordasGetErrorMessage(), RootFindingCordasInit(), RootFindingNewtonRhapsonGetErrorMessage(), RootFindingNewtonRhapsonInit(), and RootFindingPegasoInit().\hypertarget{structRootFindingBase_c93fa64c78603a4d15443dfe470d7ff7}{
+\index{RootFindingBase@{RootFindingBase}!b@{b}}
+\index{b@{b}!RootFindingBase@{RootFindingBase}}
+\paragraph[b]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingBase::b}}\hfill}
+\label{structRootFindingBase_c93fa64c78603a4d15443dfe470d7ff7}
+
+
+
+
+Definition at line 42 of file RootFindingBase.h.
+
+Referenced by computeX(), RootFindingBaseGetErrorMessage(), RootFindingBaseSetRange(), RootFindingBissecaoFindNewRange(), RootFindingCordasGetErrorMessage(), RootFindingCordasInit(), RootFindingNewtonRhapsonGetErrorMessage(), RootFindingNewtonRhapsonInit(), and RootFindingPegasoInit().\hypertarget{structRootFindingBase_0397226e2f7f9f37462275742ec280a3}{
+\index{RootFindingBase@{RootFindingBase}!x@{x}}
+\index{x@{x}!RootFindingBase@{RootFindingBase}}
+\paragraph[x]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingBase::x}}\hfill}
+\label{structRootFindingBase_0397226e2f7f9f37462275742ec280a3}
+
+
+
+
+Definition at line 43 of file RootFindingBase.h.
+
+Referenced by getNextX(), RootFindingBaseGetStateMessage(), RootFindingBissecaoFindNewRange(), RootFindingBissecaoGetStateMessage(), RootFindingBissecaoInit(), RootFindingBissecaoPerformIteration(), RootFindingCordasGetStateMessage(), RootFindingCordasInit(), RootFindingCordasPerformIteration(), RootFindingNewtonRhapsonGetErrorMessage(), RootFindingNewtonRhapsonGetStateMessage(), RootFindingNewtonRhapsonInit(), RootFindingNewtonRhapsonPerformIteration(), RootFindingPegasoGetStateMessage(), RootFindingPegasoInit(), and RootFindingPegasoPerformIteration().\hypertarget{structRootFindingBase_220ad9f8e9d2424d8885675caf38e4da}{
+\index{RootFindingBase@{RootFindingBase}!fX@{fX}}
+\index{fX@{fX}!RootFindingBase@{RootFindingBase}}
+\paragraph[fX]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingBase::fX}}\hfill}
+\label{structRootFindingBase_220ad9f8e9d2424d8885675caf38e4da}
+
+
+
+
+Definition at line 44 of file RootFindingBase.h.
+
+Referenced by getNextX(), RootFindingBissecaoFindNewRange(), RootFindingBissecaoInit(), RootFindingBissecaoPerformIteration(), RootFindingCordasInit(), RootFindingCordasPerformIteration(), RootFindingNewtonRhapsonInit(), RootFindingNewtonRhapsonPerformIteration(), RootFindingPegasoInit(), and RootFindingPegasoPerformIteration().\hypertarget{structRootFindingBase_5a4a111c9250303d6eb8dc8d29f7c00f}{
+\index{RootFindingBase@{RootFindingBase}!e@{e}}
+\index{e@{e}!RootFindingBase@{RootFindingBase}}
+\paragraph[e]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT} {\bf RootFindingBase::e}}\hfill}
+\label{structRootFindingBase_5a4a111c9250303d6eb8dc8d29f7c00f}
+
+
+
+
+Definition at line 45 of file RootFindingBase.h.
+
+Referenced by RootFindingBaseReset(), RootFindingBissecaoGetStateMessage(), RootFindingBissecaoInit(), RootFindingBissecaoPerformIteration(), RootFindingCordasGetStateMessage(), RootFindingCordasInit(), RootFindingCordasPerformIteration(), RootFindingNewtonRhapsonGetErrorMessage(), RootFindingNewtonRhapsonGetStateMessage(), RootFindingNewtonRhapsonInit(), RootFindingNewtonRhapsonPerformIteration(), RootFindingPegasoGetStateMessage(), RootFindingPegasoInit(), and RootFindingPegasoPerformIteration().\hypertarget{structRootFindingBase_e77677949a256721d17168efa25e3849}{
+\index{RootFindingBase@{RootFindingBase}!mupObj@{mupObj}}
+\index{mupObj@{mupObj}!RootFindingBase@{RootFindingBase}}
+\paragraph[mupObj]{\setlength{\rightskip}{0pt plus 5cm}muParserHandle\_\-t {\bf RootFindingBase::mupObj}}\hfill}
+\label{structRootFindingBase_e77677949a256721d17168efa25e3849}
+
+
+
+
+Definition at line 46 of file RootFindingBase.h.
+
+Referenced by RootFindingBase2nDiffEval(), RootFindingBaseCreate(), RootFindingBaseDiffEval(), RootFindingBaseEval(), and RootFindingBaseReset().\hypertarget{structRootFindingBase_148f62857539ad7baada5c292782aabf}{
+\index{RootFindingBase@{RootFindingBase}!varPtr@{varPtr}}
+\index{varPtr@{varPtr}!RootFindingBase@{RootFindingBase}}
+\paragraph[varPtr]{\setlength{\rightskip}{0pt plus 5cm}{\bf RootFindingDoubleT}$\ast$ {\bf RootFindingBase::varPtr}}\hfill}
+\label{structRootFindingBase_148f62857539ad7baada5c292782aabf}
+
+
+
+
+Definition at line 47 of file RootFindingBase.h.
+
+Referenced by RootFindingBase2nDiffEval(), RootFindingBaseCreate(), RootFindingBaseDiffEval(), and RootFindingBaseEval().\hypertarget{structRootFindingBase_13f6ee23dba551f211ec37015f58c402}{
+\index{RootFindingBase@{RootFindingBase}!errorCode@{errorCode}}
+\index{errorCode@{errorCode}!RootFindingBase@{RootFindingBase}}
+\paragraph[errorCode]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   {\bf RootFindingBase::errorCode}}\hfill}
+\label{structRootFindingBase_13f6ee23dba551f211ec37015f58c402}
+
+
+Codigo de erro: nao acessar diretamente. Veja \hyperlink{group____roots_gbcf354e731e02c63652af3a2058e739d}{RootFindingBaseGetErrorCode} e \hyperlink{group____roots_gcc5a0a8948e4b02a878f8d534c0bc982}{RootFindingBaseGetErrorMessage}. 
+
+
+
+Referenced by isRangeError(), RootFindingBaseGetErrorCode(), RootFindingBaseGetErrorMessage(), RootFindingBaseHasError(), RootFindingBaseReset(), and RootFindingBaseSetRange().\hypertarget{structRootFindingBase_96362edd623556cf5a0e873c03f72086}{
+\index{RootFindingBase@{RootFindingBase}!state@{state}}
+\index{state@{state}!RootFindingBase@{RootFindingBase}}
+\paragraph[state]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   {\bf RootFindingBase::state}}\hfill}
+\label{structRootFindingBase_96362edd623556cf5a0e873c03f72086}
+
+
+Codigo de estado: nao acessar diretamente. Veja \hyperlink{group____roots_g1712b9a29b6e6b15df2195319d5f5d70}{RootFindingBaseGetStateCode} e \hyperlink{group____roots_ga2434bfeb9592ff54df8601cd1a9a04d}{RootFindingBaseGetStateMessage}. 
+
+
+
+Referenced by RootFindingBaseGetStateCode(), RootFindingBaseGetStateMessage(), RootFindingBaseReset(), RootFindingBaseSetRange(), RootFindingBissecaoPerformIteration(), RootFindingCordasPerformIteration(), RootFindingNewtonRhapsonPerformIteration(), and RootFindingPegasoPerformIteration().
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/\hyperlink{RootFindingBase_8h}{RootFindingBase.h}\end{CompactItemize}

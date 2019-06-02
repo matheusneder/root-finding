@@ -1,0 +1,59 @@
+\hypertarget{RootFindingCordas_8h}{
+\subsection{include/RootFindingCordas.h File Reference}
+\label{RootFindingCordas_8h}\index{include/RootFindingCordas.h@{include/RootFindingCordas.h}}
+}
+/root-finding/include/RootFindingCordas.h 
+
+{\tt \#include $<$muParserDLL.h$>$}\par
+{\tt \#include \char`\"{}RootFindingCommon.h\char`\"{}}\par
+{\tt \#include \char`\"{}RootFindingBase.h\char`\"{}}\par
+\subsubsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structRootFindingCordas}{RootFindingCordas}
+\begin{CompactList}\small\item\em Estrutura de dados para o Metodo das Cordas. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{group____cordas_ga16d78672b3564becdd978dc37001261}{CORDAS\_\-DEFAULT\_\-MAX\_\-ITERATIONS}~100
+\item 
+\#define \hyperlink{group____cordas_g4caa3a434138569b567ffd432d5f12fc}{CORDAS\_\-DEFAULT\_\-TOLERANCE}~1e-7
+\end{CompactItemize}
+\subsubsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct \hyperlink{structRootFindingCordas}{RootFindingCordas} \hyperlink{group____cordas_g64e9f7aa0b38cc4c243e37b277b115d4}{RootFindingCordasT}
+\begin{CompactList}\small\item\em Apelido para struct \hyperlink{structRootFindingCordas}{RootFindingCordas}. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$ \hyperlink{group____cordas_g8e5327982ea6071bc6215f950d808bef}{RootFindingCordasCreate} (\hyperlink{structRootFindingBase}{RootFindingBaseT} $\ast$rootsObj)
+\begin{CompactList}\small\item\em Cria um objeto do tipo struct \hyperlink{structRootFindingCordas}{RootFindingCordas}. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____cordas_g4b4d161deefaec382d2f832af2654580}{RootFindingCordasInit} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Inicializa o objeto \hyperlink{structRootFindingCordas}{RootFindingCordas}. \item\end{CompactList}\item 
+void \hyperlink{group____cordas_g1b42f5cdb8c787c44539b6e0de8d968f}{RootFindingCordasDelete} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$obj)
+\begin{CompactList}\small\item\em Apaga a instancia do objeto \hyperlink{structRootFindingCordas}{RootFindingCordas}. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____cordas_gafc64dac7d95d2756d1259a599789441}{RootFindingCordasPerformIteration} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Realiza a iteracao. \item\end{CompactList}\item 
+int \hyperlink{group____cordas_gcc4b8454f6664e389c484498f42c17d8}{RootFindingCordasGetErrorCode} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem o codigo de erro. \item\end{CompactList}\item 
+int \hyperlink{group____cordas_g67aaf428f922e7d15a7fbd5a4508ffd7}{RootFindingCordasGetStateCode} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem o codigo referente ao estado do objeto. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{group____cordas_g5a6750a998093e1701c8a01ae24e9cc2}{RootFindingCordasGetErrorMessage} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem a mensagem de erro. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{group____cordas_ga065f13f2ec77b2e949190c1aca9ef9d}{RootFindingCordasGetStateMessage} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Obtem a mensagem referente ao estado do objeto. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____cordas_g66931e7adda820b82bb64bc671d7d550}{RootFindingCordasHasError} (\hyperlink{structRootFindingCordas}{RootFindingCordasT} $\ast$cordasObj)
+\begin{CompactList}\small\item\em Verifica se ha erros. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Detailed Description}
+/root-finding/include/RootFindingCordas.h 
+
+\begin{Desc}
+\item[Date:]25/03/2010 \end{Desc}
+\begin{Desc}
+\item[Author:]Matheus Neder $<$\href{mailto:matheusneder@gmail.com}{\tt matheusneder@gmail.com}$>$ \end{Desc}
+
+
+Definition in file \hyperlink{RootFindingCordas_8h-source}{RootFindingCordas.h}.

@@ -1,0 +1,161 @@
+\hypertarget{ConsoleTable_8c}{
+\subsection{src/ConsoleTable.c File Reference}
+\label{ConsoleTable_8c}\index{src/ConsoleTable.c@{src/ConsoleTable.c}}
+}
+/console-utilities/src/ConsoleTable.c 
+
+{\tt \#include \char`\"{}ConsoleTable.h\char`\"{}}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include \char`\"{}StringUtilities.h\char`\"{}}\par
+\subsubsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$ \hyperlink{ConsoleTable_8c_891d346f3b16d529f741c1890671330c}{ConsoleTableCreate} ()
+\item 
+int \hyperlink{ConsoleTable_8c_d3aca510bbf7f9da3cbe005d41540ff6}{ConsoleTableAddField} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj, unsigned width, const char $\ast$name, enum \hyperlink{ConsoleTable_8h_b5b27d58bf82fd9061aad8020009ab08}{ConsoleTableAlignment} alignment)
+\item 
+void \hyperlink{ConsoleTable_8c_de018b8023a95016f4f5c9ec8cc75f86}{ConsoleTableSetLinePrepend} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj, const char $\ast$prependstr)
+\item 
+void \hyperlink{ConsoleTable_8c_52059ce419248a8453b46022ad98fc20}{ConsoleTableSetLineAppend} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj, const char $\ast$appendStr)
+\item 
+void \hyperlink{ConsoleTable_8c_a4552d39aca27bca9d5aca4f4141fcdf}{ConsoleTableSetColDelimiter} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj, const char $\ast$colDelimiterStr)
+\item 
+void \hyperlink{ConsoleTable_8c_0beb5d8017f2512af05d5d43fec9441c}{ConsoleTableSetPadding} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj, unsigned padding)
+\item 
+static void \hyperlink{ConsoleTable_8c_d1b30ddbb7613b657cc9beb3b5ef3b89}{ConsoleTableFillCellHelper} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj, const char $\ast$content, unsigned i)
+\item 
+void \hyperlink{ConsoleTable_8c_cfefd3ef42c76fe92e9eee827f6d5dd5}{ConsoleTableFillCell} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj, const char $\ast$content)
+\item 
+void \hyperlink{ConsoleTable_8c_eb0067f39159604e9219a87ad9ef5085}{ConsoleTablePrintHeader} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj)
+\item 
+void \hyperlink{ConsoleTable_8c_c75640e19215ab9f9bf670c8087ef975}{ConsoleTableDelete} (\hyperlink{structConsoleTable}{ConsoleTableT} $\ast$tableObj)
+\end{CompactItemize}
+
+
+\subsubsection{Detailed Description}
+/console-utilities/src/ConsoleTable.c 
+
+\begin{Desc}
+\item[Date:]22/03/2010 \end{Desc}
+\begin{Desc}
+\item[Author:]Matheus Neder $<$\href{mailto:matheusneder@gmail.com}{\tt matheusneder@gmail.com}$>$ \end{Desc}
+
+
+Definition in file \hyperlink{ConsoleTable_8c-source}{ConsoleTable.c}.
+
+\subsubsection{Function Documentation}
+\hypertarget{ConsoleTable_8c_d3aca510bbf7f9da3cbe005d41540ff6}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableAddField@{ConsoleTableAddField}}
+\index{ConsoleTableAddField@{ConsoleTableAddField}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableAddField]{\setlength{\rightskip}{0pt plus 5cm}int ConsoleTableAddField ({\bf ConsoleTableT} $\ast$ {\em tableObj}, \/  unsigned {\em width}, \/  const char $\ast$ {\em name}, \/  enum {\bf ConsoleTableAlignment} {\em alignment})}\hfill}
+\label{ConsoleTable_8c_d3aca510bbf7f9da3cbe005d41540ff6}
+
+
+
+
+Definition at line 48 of file ConsoleTable.c.
+
+References ConsoleTable::Field::alignment, CONSOLE\_\-TABLE\_\-FIELD\_\-NAME\_\-MAXLEN, ConsoleTable::fields, ConsoleTable::Field::name, ConsoleTable::numFields, and ConsoleTable::Field::width.\hypertarget{ConsoleTable_8c_891d346f3b16d529f741c1890671330c}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableCreate@{ConsoleTableCreate}}
+\index{ConsoleTableCreate@{ConsoleTableCreate}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableCreate]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConsoleTableT}$\ast$ ConsoleTableCreate ()}\hfill}
+\label{ConsoleTable_8c_891d346f3b16d529f741c1890671330c}
+
+
+
+
+Definition at line 32 of file ConsoleTable.c.
+
+References ConsoleTable::colDelimiter, CONSOLE\_\-TABLE\_\-DEFAULT\_\-COL\_\-DELIMITER, ConsoleTable::fields, ConsoleTable::lineAppend, ConsoleTable::linePrepend, ConsoleTable::numFields, and ConsoleTable::padding.\hypertarget{ConsoleTable_8c_c75640e19215ab9f9bf670c8087ef975}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableDelete@{ConsoleTableDelete}}
+\index{ConsoleTableDelete@{ConsoleTableDelete}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableDelete]{\setlength{\rightskip}{0pt plus 5cm}void ConsoleTableDelete ({\bf ConsoleTableT} $\ast$ {\em tableObj})}\hfill}
+\label{ConsoleTable_8c_c75640e19215ab9f9bf670c8087ef975}
+
+
+
+
+Definition at line 172 of file ConsoleTable.c.
+
+References ConsoleTable::fields.\hypertarget{ConsoleTable_8c_cfefd3ef42c76fe92e9eee827f6d5dd5}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableFillCell@{ConsoleTableFillCell}}
+\index{ConsoleTableFillCell@{ConsoleTableFillCell}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableFillCell]{\setlength{\rightskip}{0pt plus 5cm}void ConsoleTableFillCell ({\bf ConsoleTableT} $\ast$ {\em tableObj}, \/  const char $\ast$ {\em content})}\hfill}
+\label{ConsoleTable_8c_cfefd3ef42c76fe92e9eee827f6d5dd5}
+
+
+
+
+Definition at line 140 of file ConsoleTable.c.
+
+References ConsoleTableFillCellHelper(), ConsoleTable::lineAppend, ConsoleTable::linePrepend, and ConsoleTable::numFields.\hypertarget{ConsoleTable_8c_d1b30ddbb7613b657cc9beb3b5ef3b89}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableFillCellHelper@{ConsoleTableFillCellHelper}}
+\index{ConsoleTableFillCellHelper@{ConsoleTableFillCellHelper}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableFillCellHelper]{\setlength{\rightskip}{0pt plus 5cm}static void ConsoleTableFillCellHelper ({\bf ConsoleTableT} $\ast$ {\em tableObj}, \/  const char $\ast$ {\em content}, \/  unsigned {\em i})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}\hfill}
+\label{ConsoleTable_8c_d1b30ddbb7613b657cc9beb3b5ef3b89}
+
+
+
+
+Definition at line 115 of file ConsoleTable.c.
+
+References ConsoleTable::Field::alignment, ConsoleTable::colDelimiter, CONSOLE\_\-TABLE\_\-ALIGNMENT\_\-LEFT, ConsoleTable::fields, ConsoleTable::padding, and ConsoleTable::Field::width.
+
+Referenced by ConsoleTableFillCell(), and ConsoleTablePrintHeader().\hypertarget{ConsoleTable_8c_eb0067f39159604e9219a87ad9ef5085}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTablePrintHeader@{ConsoleTablePrintHeader}}
+\index{ConsoleTablePrintHeader@{ConsoleTablePrintHeader}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTablePrintHeader]{\setlength{\rightskip}{0pt plus 5cm}void ConsoleTablePrintHeader ({\bf ConsoleTableT} $\ast$ {\em tableObj})}\hfill}
+\label{ConsoleTable_8c_eb0067f39159604e9219a87ad9ef5085}
+
+
+
+
+Definition at line 161 of file ConsoleTable.c.
+
+References ConsoleTableFillCellHelper(), ConsoleTable::fields, ConsoleTable::lineAppend, ConsoleTable::linePrepend, ConsoleTable::Field::name, and ConsoleTable::numFields.\hypertarget{ConsoleTable_8c_a4552d39aca27bca9d5aca4f4141fcdf}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableSetColDelimiter@{ConsoleTableSetColDelimiter}}
+\index{ConsoleTableSetColDelimiter@{ConsoleTableSetColDelimiter}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableSetColDelimiter]{\setlength{\rightskip}{0pt plus 5cm}void ConsoleTableSetColDelimiter ({\bf ConsoleTableT} $\ast$ {\em tableObj}, \/  const char $\ast$ {\em colDelimiterStr})}\hfill}
+\label{ConsoleTable_8c_a4552d39aca27bca9d5aca4f4141fcdf}
+
+
+
+
+Definition at line 82 of file ConsoleTable.c.
+
+References ConsoleTable::colDelimiter, and CONSOLE\_\-TABLE\_\-MAX\_\-SEPARATOR\_\-LEN.\hypertarget{ConsoleTable_8c_52059ce419248a8453b46022ad98fc20}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableSetLineAppend@{ConsoleTableSetLineAppend}}
+\index{ConsoleTableSetLineAppend@{ConsoleTableSetLineAppend}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableSetLineAppend]{\setlength{\rightskip}{0pt plus 5cm}void ConsoleTableSetLineAppend ({\bf ConsoleTableT} $\ast$ {\em tableObj}, \/  const char $\ast$ {\em appendStr})}\hfill}
+\label{ConsoleTable_8c_52059ce419248a8453b46022ad98fc20}
+
+
+
+
+Definition at line 76 of file ConsoleTable.c.
+
+References CONSOLE\_\-TABLE\_\-MAX\_\-SEPARATOR\_\-LEN, and ConsoleTable::lineAppend.\hypertarget{ConsoleTable_8c_de018b8023a95016f4f5c9ec8cc75f86}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableSetLinePrepend@{ConsoleTableSetLinePrepend}}
+\index{ConsoleTableSetLinePrepend@{ConsoleTableSetLinePrepend}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableSetLinePrepend]{\setlength{\rightskip}{0pt plus 5cm}void ConsoleTableSetLinePrepend ({\bf ConsoleTableT} $\ast$ {\em tableObj}, \/  const char $\ast$ {\em prependstr})}\hfill}
+\label{ConsoleTable_8c_de018b8023a95016f4f5c9ec8cc75f86}
+
+
+
+
+Definition at line 70 of file ConsoleTable.c.
+
+References CONSOLE\_\-TABLE\_\-MAX\_\-SEPARATOR\_\-LEN, and ConsoleTable::linePrepend.\hypertarget{ConsoleTable_8c_0beb5d8017f2512af05d5d43fec9441c}{
+\index{ConsoleTable.c@{ConsoleTable.c}!ConsoleTableSetPadding@{ConsoleTableSetPadding}}
+\index{ConsoleTableSetPadding@{ConsoleTableSetPadding}!ConsoleTable.c@{ConsoleTable.c}}
+\paragraph[ConsoleTableSetPadding]{\setlength{\rightskip}{0pt plus 5cm}void ConsoleTableSetPadding ({\bf ConsoleTableT} $\ast$ {\em tableObj}, \/  unsigned {\em padding})}\hfill}
+\label{ConsoleTable_8c_0beb5d8017f2512af05d5d43fec9441c}
+
+
+
+
+Definition at line 88 of file ConsoleTable.c.
+
+References ConsoleTable::padding.

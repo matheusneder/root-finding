@@ -1,0 +1,67 @@
+\hypertarget{RootFindingNewtonRhapson_8c}{
+\subsection{src/RootFindingNewtonRhapson.c File Reference}
+\label{RootFindingNewtonRhapson_8c}\index{src/RootFindingNewtonRhapson.c@{src/RootFindingNewtonRhapson.c}}
+}
+/root-finding/src/RootFindingNewtonRhapson.c 
+
+{\tt \#include \char`\"{}RootFindingNewtonRhapson.h\char`\"{}}\par
+{\tt \#include \char`\"{}messages/RootFindingMessages.h\char`\"{}}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$math.h$>$}\par
+\subsubsection*{Functions}
+\begin{CompactItemize}
+\item 
+static void \hyperlink{group____newton_g5d327a5dbdddddf1f6f5a68e7089031b}{setError} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj, int errorCode)
+\begin{CompactList}\small\item\em Set error code and change state to NEWTON\_\-ERROR\_\-FOUND. \item\end{CompactList}\item 
+static void \hyperlink{group____newton_g3ebdf784fb05eaa2cc11fee2f1eef503}{resetError} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\item 
+\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$ \hyperlink{group____newton_ga2ec468a98e05720903ac94228426bed}{RootFindingNewtonRhapsonCreate} (\hyperlink{structRootFindingBase}{RootFindingBaseT} $\ast$rootsObj)
+\begin{CompactList}\small\item\em Cria um objeto do tipo struct \hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapson}. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____newton_g3e1d44e30555a4b12ac1a0c56a75ba5e}{RootFindingNewtonRhapsonInit} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Inicializa o objeto \hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapson}. \item\end{CompactList}\item 
+void \hyperlink{group____newton_g40efb00500a3157208d224b3942ec915}{RootFindingNewtonRhapsonDelete} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Apaga o objeto \hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapson}. \item\end{CompactList}\item 
+static \hyperlink{RootFindingCommon_8h_a296fe63994e03408c4ad62794d472e9}{RootFindingDoubleT} \hyperlink{group____newton_gf3686b9647cf53686b267e45dc9ecd1e}{getNextX} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Obtem o valor para o proximo x. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____newton_g730f69beaf24e0c2ecfa81a124a09987}{RootFindingNewtonRhapsonPerformIteration} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Realiza a iteracao. \item\end{CompactList}\item 
+int \hyperlink{group____newton_ga8599365ab3f0770158719cdd32eb5c3}{RootFindingNewtonRhapsonGetErrorCode} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Obtem o codigo de erro. \item\end{CompactList}\item 
+int \hyperlink{group____newton_g9d87a4beccc7b61365f6b680fc1a4355}{RootFindingNewtonRhapsonGetStateCode} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Obtem o codigo referente ao estado do objeto. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{group____newton_gcbbd94963ebd3ddbaf6bf4e9ce1c0a1f}{RootFindingNewtonRhapsonGetErrorMessage} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Obtem a mensagem de erro. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{group____newton_g70436f650ac07866bb8d9897908f4422}{RootFindingNewtonRhapsonGetStateMessage} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Obtem a mensagem referente ao estado do objeto. \item\end{CompactList}\item 
+\hyperlink{RootFindingCommon_8h_31228d356f5429fa5ba7f206e4dee12f}{RootFindingBoolT} \hyperlink{group____newton_g6d26d28c2bf14b9bf4072c6ccd70269f}{RootFindingNewtonRhapsonHasError} (\hyperlink{structRootFindingNewtonRhapson}{RootFindingNewtonRhapsonT} $\ast$newtonObj)
+\begin{CompactList}\small\item\em Verifica se ha erros. \item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Variables}
+\begin{CompactItemize}
+\item 
+static char \hyperlink{RootFindingNewtonRhapson_8c_e6f024d5924f8ecf7500cedfab2c0606}{msg} \mbox{[}255\mbox{]}
+\end{CompactItemize}
+
+
+\subsubsection{Detailed Description}
+/root-finding/src/RootFindingNewtonRhapson.c 
+
+\begin{Desc}
+\item[Date:]25/03/2010 \end{Desc}
+\begin{Desc}
+\item[Author:]Matheus Neder $<$\href{mailto:matheusneder@gmail.com}{\tt matheusneder@gmail.com}$>$ \end{Desc}
+
+
+Definition in file \hyperlink{RootFindingNewtonRhapson_8c-source}{RootFindingNewtonRhapson.c}.
+
+\subsubsection{Variable Documentation}
+\hypertarget{RootFindingNewtonRhapson_8c_e6f024d5924f8ecf7500cedfab2c0606}{
+\index{RootFindingNewtonRhapson.c@{RootFindingNewtonRhapson.c}!msg@{msg}}
+\index{msg@{msg}!RootFindingNewtonRhapson.c@{RootFindingNewtonRhapson.c}}
+\paragraph[msg]{\setlength{\rightskip}{0pt plus 5cm}char {\bf msg}\mbox{[}255\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}\hfill}
+\label{RootFindingNewtonRhapson_8c_e6f024d5924f8ecf7500cedfab2c0606}
+
+
+
+
+Definition at line 209 of file RootFindingNewtonRhapson.c.
