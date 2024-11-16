@@ -1,4 +1,4 @@
-# Root finding
+# ![image](root-finding-logo.svg) Root finding
 
 Root finding of mathematical functions using numerical calculus algorithms writed in C language (C ISO/IEC 9899:1990). 
 
