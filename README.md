@@ -2,7 +2,7 @@
 
 ![image](root-finding-logo.svg)
 
-Root finding of mathematical functions using numerical calculus algorithms writed in C language (C ISO/IEC 9899:1990). 
+Root finding of mathematical functions using numerical calculus algorithms written in C language (C ISO/IEC 9899:1990). 
 
 I wrote this project while studying numerical calculus on university. I migrated from Google Code (https://code.google.com/archive/p/root-finding/) to GitHub for archive purposes.
 
